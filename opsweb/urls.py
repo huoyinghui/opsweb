@@ -14,29 +14,27 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+# from apps.account.router import account_router
 from django.contrib import admin
 from django.urls import path, include
-
+# from rest_framework_jwt.views import obtain_jwt_token
+from rest_framework.routers import DefaultRouter
 # swagger pakeage
 from rest_framework.schemas import get_schema_view
 from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPIRenderer
-# from rest_framework_jwt.views import obtain_jwt_token
-from rest_framework.routers import DefaultRouter
-from apps.account.router import account_router
-from apps.core.router import core_router
-from apps.core.views import CoreObtainJSONWebToken
 
+from core.views import CoreObtainJSONWebToken
+from core.router import core_router
 
 schema_view = get_schema_view(title='Users API', renderer_classes=[OpenAPIRenderer, SwaggerUIRenderer])
 router = DefaultRouter()
-router.registry.extend(account_router.registry)
 router.registry.extend(core_router.registry)
 
 urlpatterns = [
     path(r'', include(router.urls)),
     path('docs/', schema_view),  # swagger doc
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # swagger login
     path('admin/', admin.site.urls),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # swagger login
     path('api-token-auth/', CoreObtainJSONWebToken.as_view()),
 ]
 

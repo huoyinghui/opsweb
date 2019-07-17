@@ -9,10 +9,6 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
-import pymysql
-
-pymysql.install_as_MySQLdb()
-
 import os
 import sys
 import datetime
@@ -48,7 +44,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_swagger',
-    'account',
+    'core',
+    'apps.account',
 ]
 
 MIDDLEWARE = [
@@ -77,8 +74,8 @@ REST_FRAMEWORK = {
 
     # 设置全局权限器
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.DjangoModelPermissions',# 指定默认全局权限
-
+        # 指定默认全局权限
+        'rest_framework.permissions.DjangoModelPermissions',
     ),
     # 认证
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -200,10 +197,10 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test002',
+        'NAME': 'opsweb',
         'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'mysecret249password',
+        'HOST': '0.0.0.0',
         'PORT': '3306',
         # 'OPTIONS': {
         #     'init_command': "SET storage_engine=INNODB;SET sql_mode='STRICT_TRANS_TABLES'"
@@ -211,7 +208,7 @@ DATABASES = {
     },
 }
 
-AUTH_USER_MODEL = "account.User"
+AUTH_USER_MODEL = "core.User"
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -244,22 +241,22 @@ LOGGING = {
     },
     'handlers': {
         'null': {
-            'level':'DEBUG',
-            'class':'logging.NullHandler',
+            'level': 'DEBUG',
+            'class': 'logging.NullHandler',
         },
-        '''
-        'sentry': {
-            'level': 'ERROR',
-            'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
-            'tags': {'custom-tag': 'x'},
-        },
-        '''
-        'console':{
-            'level':'DEBUG',
-            'class':'logging.StreamHandler',
+        # '''
+        # 'sentry': {
+        #     'level': 'ERROR',
+        #     'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
+        #     'tags': {'custom-tag': 'x'},
+        # },
+        # '''
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
             'formatter': 'default'
         },
-        'django':{
+        'django': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
             'filename': os.path.join(BASE_DIR, 'logs', 'django.log'),
@@ -275,7 +272,7 @@ LOGGING = {
             'interval': 1,
             'encoding': 'utf8',
         },
-        'django_request_handler':{
+        'django_request_handler': {
             'level': 'DEBUG',
             'class': 'logging.handlers.TimedRotatingFileHandler',
             'formatter': 'default',
@@ -284,7 +281,7 @@ LOGGING = {
             'interval': 7,
             'encoding': 'utf8',
         },
-        'django_db_backends_handler':{
+        'django_db_backends_handler': {
             'level': 'DEBUG',
             'class': 'logging.handlers.TimedRotatingFileHandler',
             'formatter': 'verbose',
@@ -293,7 +290,7 @@ LOGGING = {
             'interval': 7,
         }
     },
-    'loggers' : {
+    'loggers': {
         'django': {
             'level': 'DEBUG',
             'handlers': ['django'],
@@ -304,13 +301,13 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': False,
         },
-        'django.db.backends':{
+        'django.db.backends': {
             'handlers': ['django_db_backends_handler'],
             'level': 'DEBUG',
             'propagate': False,
         }
     },
-    'root':{
+    'root': {
         'level': 'DEBUG',
         'handlers': ['root_handler']
     }
@@ -331,4 +328,13 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 
+PROJ_SETTING_MODE = os.getenv('MODE', 'LOCAL')
+try:
+    if PROJ_SETTING_MODE.upper() == 'PROD':
+        from config.prod_setting import *
+    else:
+        from config.local_setting import *
+except ImportError:
+    pass

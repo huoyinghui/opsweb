@@ -1,32 +1,23 @@
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
-from rest_framework.response import Response
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework_jwt.views import ObtainJSONWebToken, RefreshJSONWebToken, VerifyJSONWebToken
-from .models import Boss, User
-from .serializers import BossSerializers
+from .models import User
+from .serializers import UserSerializers
 from .baseviews import BaseViewSet
 
 
-class ListBoss(BaseViewSet):
+class UserSet(BaseViewSet):
     """
     View to list all users in the system.
 
     * Requires token authentication.
     * Only admin users are able to access this view.
     """
-    queryset = Boss.objects.all().order_by('id')
-    serializer_class = BossSerializers
+    queryset = User.objects.all().order_by('id')
+    serializer_class = UserSerializers
     permission_classes = [IsAdminUser]
     search_fields = ['level']
-
-    def get(self, request, format=None):
-        """
-        Return a list of all users.
-        """
-        print(request, format)
-        bossnames = [boss.boss_name for boss in Boss.objects.all()]
-        return Response(bossnames)
 
 
 class CoreObtainJSONWebToken(ObtainJSONWebToken):
@@ -48,6 +39,9 @@ verify_jwt_token = VerifyJSONWebToken.as_view()
 
 
 class CustomBackend(ModelBackend):
+    """
+    实现邮箱/用户名登陆
+    """
     def authenticate(self, request, username=None, password=None, **kwargs):
         try:
             user = User.objects.get(Q(username=username) | Q(email=username))

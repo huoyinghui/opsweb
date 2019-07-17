@@ -90,7 +90,9 @@ REST_FRAMEWORK = {
 # 认证后端列表
 AUTHENTICATION_BACKENDS = (
     'rest_framework.authentication.TokenAuthentication',
-    'django.contrib.auth.backends.ModelBackend',
+    # 'django.contrib.auth.backends.ModelBackend',
+    # 使用自定义登陆认证
+    'core.views.CustomBackend',
 )
 
 # jwt setting
@@ -297,12 +299,12 @@ LOGGING = {
             'propagate': False
         },
         'django.request': {
-            'handlers': ['django_request_handler'],
+            'handlers': ['console', 'django_request_handler'],
             'level': 'DEBUG',
             'propagate': False,
         },
         'django.db.backends': {
-            'handlers': ['django_db_backends_handler'],
+            'handlers': ['console', 'django_db_backends_handler'],
             'level': 'DEBUG',
             'propagate': False,
         }

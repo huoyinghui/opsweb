@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_swagger',
     'core',
+    # xadmin
+    'xadmin',
+    'crispy_forms',
+    'reversion',
     # 'apps.account',
 ]
 

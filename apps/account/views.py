@@ -1,11 +1,11 @@
-from rest_framework.viewsets import ModelViewSet
-from .serializers import UserSerializers
 from django.contrib.auth import get_user_model
+from .serializers import UserSerializers
 from .baseviews import BaseViewSet
 from rest_framework.permissions import IsAuthenticated
 
 User = get_user_model()
 # Create your views here.
+
 
 class UserViewSet(BaseViewSet):
     """

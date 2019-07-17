@@ -4,6 +4,7 @@
 from .models import User
 from rest_framework.serializers import ModelSerializer
 
+
 class UserSerializers(ModelSerializer):
     """
     用户序列化类

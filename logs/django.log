@@ -1,0 +1,189 @@
+2019-07-17 17:45:55 [django.server:124] [WARNING] - "GET /docs/ HTTP/1.1" 403 2057
+2019-07-17 17:45:55 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/app.bundle.css HTTP/1.1" 304 0
+2019-07-17 17:45:55 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/vendors.bundle.css HTTP/1.1" 304 0
+2019-07-17 17:45:55 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/vendors.bundle.js HTTP/1.1" 304 0
+2019-07-17 17:45:55 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/app.bundle.js HTTP/1.1" 304 0
+2019-07-17 17:45:55 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/logo_small.png HTTP/1.1" 304 0
+2019-07-17 17:51:55 [django.server:124] [WARNING] - "GET /docs/ HTTP/1.1" 403 2057
+2019-07-17 17:51:57 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'rest_framework/login.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x102d27378>>, 'request': <WSGIRequest: GET '/api-auth/login/?next=/docs/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1029d7048>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102e40a20>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102e400b8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102e40390>, 'next': '/docs/', 'site': <django.contrib.sites.requests.RequestSite object at 0x102e40240>, 'site_name': '127.0.0.1:8000'}, {'block': <Block Node: head. Contents: [<TextNode: '\n\n      '>, <Block Node: meta. Contents: [<TextNode: '\n        <meta http-equiv'>]>, <TextNode: '\n\n      <title>'>, <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>, <TextNode: '</title>\n\n      '>, <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102e95908>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102e95978>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102e95a58>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102e95a90>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>, <TextNode: '\n\n    '>]>}, {'block': <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>}]
+2019-07-17 17:51:57 [django.template:872] [DEBUG] - Exception while resolving variable 'code_style' in template 'rest_framework/login.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [code_style] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x102d27378>>, 'request': <WSGIRequest: GET '/api-auth/login/?next=/docs/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1029d7048>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102e40a20>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102e400b8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102e40390>, 'next': '/docs/', 'site': <django.contrib.sites.requests.RequestSite object at 0x102e40240>, 'site_name': '127.0.0.1:8000'}, {'block': <Block Node: head. Contents: [<TextNode: '\n\n      '>, <Block Node: meta. Contents: [<TextNode: '\n        <meta http-equiv'>]>, <TextNode: '\n\n      <title>'>, <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>, <TextNode: '</title>\n\n      '>, <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102e95908>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102e95978>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102e95a58>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102e95a90>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>, <TextNode: '\n\n    '>]>}, {'block': <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102e95908>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102e95978>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102e95a58>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102e95a90>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>}]
+2019-07-17 17:51:57 [django.server:124] [INFO] - "GET /api-auth/login/?next=/docs/ HTTP/1.1" 200 2705
+2019-07-17 17:51:57 [django.server:124] [INFO] - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2019-07-17 17:51:57 [django.server:124] [INFO] - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2019-07-17 17:51:57 [django.server:124] [INFO] - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2019-07-17 17:51:57 [django.server:124] [INFO] - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2019-07-17 17:51:58 [django.server:124] [INFO] - "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2019-07-17 17:51:59 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'rest_framework/login.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x102e60d90>>, 'request': <WSGIRequest: POST '/api-auth/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x102e51950>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102ea7518>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102e9c828>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102e9ceb8>, 'next': '/docs/', 'site': <django.contrib.sites.requests.RequestSite object at 0x100879978>, 'site_name': '127.0.0.1:8000'}, {'block': <Block Node: head. Contents: [<TextNode: '\n\n      '>, <Block Node: meta. Contents: [<TextNode: '\n        <meta http-equiv'>]>, <TextNode: '\n\n      <title>'>, <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>, <TextNode: '</title>\n\n      '>, <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102e918d0>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102e91ac8>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102e91b70>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102e91be0>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>, <TextNode: '\n\n    '>]>}, {'block': <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>}]
+2019-07-17 17:51:59 [django.template:872] [DEBUG] - Exception while resolving variable 'code_style' in template 'rest_framework/login.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [code_style] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x102e60d90>>, 'request': <WSGIRequest: POST '/api-auth/login/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x102e51950>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102ea7518>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102e9c828>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=True, valid=False, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102e9ceb8>, 'next': '/docs/', 'site': <django.contrib.sites.requests.RequestSite object at 0x100879978>, 'site_name': '127.0.0.1:8000'}, {'block': <Block Node: head. Contents: [<TextNode: '\n\n      '>, <Block Node: meta. Contents: [<TextNode: '\n        <meta http-equiv'>]>, <TextNode: '\n\n      <title>'>, <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>, <TextNode: '</title>\n\n      '>, <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102e918d0>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102e91ac8>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102e91b70>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102e91be0>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>, <TextNode: '\n\n    '>]>}, {'block': <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102e918d0>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102e91ac8>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102e91b70>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102e91be0>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>}]
+2019-07-17 17:51:59 [django.server:124] [INFO] - "POST /api-auth/login/ HTTP/1.1" 200 2939
+2019-07-17 17:52:16 [django.server:124] [INFO] - "POST /api-auth/login/ HTTP/1.1" 302 0
+2019-07-17 17:52:16 [django.server:124] [INFO] - "GET /docs/ HTTP/1.1" 200 6624
+2019-07-17 17:52:19 [django.server:124] [INFO] - "GET /api-auth/logout/?next=/docs/ HTTP/1.1" 302 0
+2019-07-17 17:52:19 [django.server:124] [WARNING] - "GET /docs/ HTTP/1.1" 403 2057
+2019-07-17 17:52:21 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'rest_framework/login.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x102eb6ea0>>, 'request': <WSGIRequest: GET '/api-auth/login/?next=/docs/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x102efa048>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102ea1128>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102e4d8d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102e4d400>, 'next': '/docs/', 'site': <django.contrib.sites.requests.RequestSite object at 0x102e4d358>, 'site_name': '127.0.0.1:8000'}, {'block': <Block Node: head. Contents: [<TextNode: '\n\n      '>, <Block Node: meta. Contents: [<TextNode: '\n        <meta http-equiv'>]>, <TextNode: '\n\n      <title>'>, <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>, <TextNode: '</title>\n\n      '>, <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102eef160>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102eef048>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102eef7f0>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102eef860>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>, <TextNode: '\n\n    '>]>}, {'block': <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>}]
+2019-07-17 17:52:21 [django.template:872] [DEBUG] - Exception while resolving variable 'code_style' in template 'rest_framework/login.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [code_style] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x102eb6ea0>>, 'request': <WSGIRequest: GET '/api-auth/login/?next=/docs/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x102efa048>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x102ea1128>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x102e4d8d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x102e4d400>, 'next': '/docs/', 'site': <django.contrib.sites.requests.RequestSite object at 0x102e4d358>, 'site_name': '127.0.0.1:8000'}, {'block': <Block Node: head. Contents: [<TextNode: '\n\n      '>, <Block Node: meta. Contents: [<TextNode: '\n        <meta http-equiv'>]>, <TextNode: '\n\n      <title>'>, <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>, <TextNode: '</title>\n\n      '>, <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102eef160>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102eef048>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102eef7f0>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102eef860>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>, <TextNode: '\n\n    '>]>}, {'block': <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x102eef160>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x102eef048>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x102eef7f0>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x102eef860>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>}]
+2019-07-17 17:52:21 [django.server:124] [INFO] - "GET /api-auth/login/?next=/docs/ HTTP/1.1" 200 2705
+2019-07-17 17:52:22 [django.server:124] [INFO] - "POST /api-auth/login/ HTTP/1.1" 302 0
+2019-07-17 17:52:22 [django.server:124] [INFO] - "GET /docs/ HTTP/1.1" 200 6624

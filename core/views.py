@@ -1,7 +1,9 @@
+from django.contrib.auth.backends import ModelBackend
+from django.db.models import Q
 from rest_framework.response import Response
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework_jwt.views import ObtainJSONWebToken, RefreshJSONWebToken, VerifyJSONWebToken
-from .models import Boss
+from .models import Boss, User
 from .serializers import BossSerializers
 from .baseviews import BaseViewSet
 
@@ -48,7 +50,7 @@ verify_jwt_token = VerifyJSONWebToken.as_view()
 class CustomBackend(ModelBackend):
     def authenticate(self, request, username=None, password=None, **kwargs):
         try:
-            user = UserProfile.objects.get(Q(username=username) | Q(email=username))
+            user = User.objects.get(Q(username=username) | Q(email=username))
             if user.check_password(password):
                 return user
         except Exception as e:

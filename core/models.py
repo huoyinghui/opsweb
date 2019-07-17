@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
 
-class UserProfile(AbstractUser):
+class User(AbstractUser):
     GENDER_CHOICE = [
         ('male', u'男'),
         ('female', u'女'),

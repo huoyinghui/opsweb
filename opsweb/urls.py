@@ -31,19 +31,10 @@ router = DefaultRouter()
 router.registry.extend(core_router.registry)
 
 
-import xadmin
-xadmin.autodiscover()
-
-# version模块自动注册需要版本控制的 Model
-from xadmin.plugins import xversion
-xversion.register_models()
-
-
 urlpatterns = [
     path(r'', include(router.urls)),
     path('docs/', schema_view),  # swagger doc
     path('admin/', admin.site.urls),
-    path('xadmin/', xadmin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # swagger login
     path('api-token-auth/', CoreObtainJSONWebToken.as_view()),
 ]

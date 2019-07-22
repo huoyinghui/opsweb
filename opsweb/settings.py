@@ -46,9 +46,9 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'core',
     # xadmin
-    'xadmin',
-    'crispy_forms',
-    'reversion',
+    # 'xadmin',
+    # 'crispy_forms',
+    # 'reversion',
     # 'apps.account',
 ]
 
@@ -336,6 +336,7 @@ USE_TZ = False
 STATIC_URL = '/static/'
 # TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 
+TEST_RUNNER = 'django_coverage.coverage_runner.CoverageRunner'
 PROJ_SETTING_MODE = os.getenv('MODE', 'LOCAL')
 try:
     if PROJ_SETTING_MODE.upper() == 'PROD':

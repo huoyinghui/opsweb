@@ -3,3 +3,6 @@
 2019-07-17 17:52:19 [django.request:228] [WARNING] - Forbidden: /docs/
 2019-07-17 18:16:52 [django.request:228] [WARNING] - Forbidden: /docs/
 2019-07-17 18:16:53 [django.request:228] [WARNING] - Forbidden: /docs/
+2019-07-18 10:03:47 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-22 14:20:17 [django.request:228] [WARNING] - Forbidden: /docs/
+2019-07-22 14:20:58 [django.request:228] [WARNING] - Forbidden: /api-token-auth/

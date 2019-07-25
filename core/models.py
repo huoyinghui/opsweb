@@ -1,6 +1,7 @@
 import datetime
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from mptt.models import MPTTModel, TreeForeignKey
 # Create your models here.
 
 
@@ -60,3 +61,12 @@ class Boss(models.Model):
         # permissions=(
         #     ("view_user", "cat view user"),
         # )
+
+
+# pageJson: 使用树模型
+class PageJson(MPTTModel):
+    name = models.CharField(max_length=50, unique=True)
+    parent = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
+
+    class MPTTMeta:
+        order_insertion_by = ['name']

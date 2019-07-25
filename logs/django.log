@@ -650,3 +650,9 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [code_style] in
 2019-07-25 11:48:45 [django.server:124] [INFO] - "GET /core/user/?page=1 HTTP/1.1" 200 126
 2019-07-25 11:50:39 [django.server:124] [WARNING] - "POST /api-token-auth/ HTTP/1.1" 403 49
 2019-07-25 11:51:06 [django.server:124] [WARNING] - "POST /api-token-auth/ HTTP/1.1" 403 49
+2019-07-25 14:31:13 [django.server:124] [INFO] - "GET /docs/ HTTP/1.1" 200 6579
+2019-07-25 14:31:19 [django.server:124] [ERROR] - "GET /tree/ HTTP/1.1" 500 89374
+2019-07-25 14:35:57 [django.server:124] [INFO] - "GET / HTTP/1.1" 200 5599
+2019-07-25 14:35:58 [django.server:124] [INFO] - "GET /docs/ HTTP/1.1" 200 10198
+2019-07-25 14:36:11 [django.server:124] [INFO] - "GET /core/tree/?page=1 HTTP/1.1" 200 211
+2019-07-25 14:36:55 [django.server:124] [INFO] - "GET /core/tree/?page=1 HTTP/1.1" 200 255

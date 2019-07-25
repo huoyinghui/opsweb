@@ -2,9 +2,10 @@ from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework_jwt.views import ObtainJSONWebToken, RefreshJSONWebToken, VerifyJSONWebToken
-from .models import User
-from .serializers import UserSerializers
+from .models import User, PageJson
+from .serializers import UserSerializers, PageJsonSerializers
 from .baseviews import BaseViewSet
+
 
 import logging
 
@@ -12,17 +13,7 @@ import logging
 logger = logging.getLogger('core')
 
 
-class UserSet(BaseViewSet):
-    """
-    View to list all users in the system.
 
-    * Requires token authentication.
-    * Only admin users are able to access this view.
-    """
-    queryset = User.objects.all().order_by('id')
-    serializer_class = UserSerializers
-    permission_classes = [IsAdminUser]
-    search_fields = ['level']
 
 
 class CoreObtainJSONWebToken(ObtainJSONWebToken):
@@ -55,3 +46,29 @@ class CustomBackend(ModelBackend):
         except Exception as e:
             logger.error("{}".format(e), exc_info=True)
             return None
+
+
+class UserSet(BaseViewSet):
+    """
+    View to list all users in the system.
+
+    * Requires token authentication.
+    * Only admin users are able to access this view.
+    """
+    queryset = User.objects.all().order_by('id')
+    serializer_class = UserSerializers
+    permission_classes = [IsAdminUser]
+    search_fields = ['level']
+
+
+class PageJsonSet(BaseViewSet):
+    """
+    View to list all users in the system.
+
+    * Requires token authentication.
+    * Only admin users are able to access this view.
+    """
+    queryset = PageJson.objects.all().order_by('id')
+    serializer_class = PageJsonSerializers
+    permission_classes = [IsAdminUser]
+    search_fields = ['level']

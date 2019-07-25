@@ -9,3 +9,20 @@
 2019-07-25 11:47:18 [django.request:228] [WARNING] - Forbidden: /api-token-auth/
 2019-07-25 11:50:39 [django.request:228] [WARNING] - Forbidden: /api-token-auth/
 2019-07-25 11:51:06 [django.request:228] [WARNING] - Forbidden: /api-token-auth/
+2019-07-25 14:31:19 [django.request:228] [ERROR] - Internal Server Error: /tree/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/github/docker_nginx/opsweb/core/views.py", line 63, in show_genres
+    return render(request, "genres.html", {'genres': Genre.objects.all()})
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: genres.html

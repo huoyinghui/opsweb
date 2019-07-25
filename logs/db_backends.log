@@ -640,3 +640,277 @@
 2019-07-25 11:51:13,765 DEBUG (0.005) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
 2019-07-25 11:51:13,771 DEBUG (0.005) SHOW FULL TABLES; args=None
 2019-07-25 11:51:13,776 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:17:42,865 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:17:42,866 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:17:42,871 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-25 14:17:42,876 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:18:43,717 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:18:43,718 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:18:43,724 DEBUG (0.006) SHOW FULL TABLES; args=None
+2019-07-25 14:18:43,731 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:19:11,389 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:19:11,390 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:19:11,393 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:19:11,397 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:19:46,437 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:19:46,439 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:19:46,441 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:19:46,444 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:20:16,976 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:20:16,977 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:20:16,978 DEBUG (0.001) SELECT @@sql_mode; args=None
+2019-07-25 14:20:17,443 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-25 14:20:17,447 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:20:17,450 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:20:17,452 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:20:17,465 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:20:17,467 DEBUG CREATE TABLE `core_genre` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL UNIQUE, `lft` integer UNSIGNED NOT NULL, `rght` integer UNSIGNED NOT NULL, `tree_id` integer UNSIGNED NOT NULL, `level` integer UNSIGNED NOT NULL, `parent_id` integer NULL); (params None)
+2019-07-25 14:20:17,600 DEBUG (0.132) CREATE TABLE `core_genre` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL UNIQUE, `lft` integer UNSIGNED NOT NULL, `rght` integer UNSIGNED NOT NULL, `tree_id` integer UNSIGNED NOT NULL, `level` integer UNSIGNED NOT NULL, `parent_id` integer NULL); args=None
+2019-07-25 14:20:17,603 DEBUG (0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'core_genre'; args=['core_genre']
+2019-07-25 14:20:17,605 DEBUG (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'core_genre'; args=['core_genre']
+2019-07-25 14:20:17,607 DEBUG (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'core_genre'; args=['core_genre']
+2019-07-25 14:20:17,609 DEBUG (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'core_genre'; args=['core_genre']
+2019-07-25 14:20:17,612 DEBUG (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'core_genre'; args=['core_genre']
+2019-07-25 14:20:17,614 DEBUG (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'core_genre'; args=['core_genre']
+2019-07-25 14:20:17,617 DEBUG (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'core_genre'; args=['core_genre']
+2019-07-25 14:20:17,618 DEBUG ALTER TABLE `core_genre` ADD CONSTRAINT `core_genre_parent_id_aedf2984_fk_core_genre_id` FOREIGN KEY (`parent_id`) REFERENCES `core_genre` (`id`); (params ())
+2019-07-25 14:20:17,742 DEBUG (0.124) ALTER TABLE `core_genre` ADD CONSTRAINT `core_genre_parent_id_aedf2984_fk_core_genre_id` FOREIGN KEY (`parent_id`) REFERENCES `core_genre` (`id`); args=()
+2019-07-25 14:20:17,742 DEBUG CREATE INDEX `core_genre_tree_id_32081778` ON `core_genre` (`tree_id`); (params ())
+2019-07-25 14:20:17,795 DEBUG (0.052) CREATE INDEX `core_genre_tree_id_32081778` ON `core_genre` (`tree_id`); args=()
+2019-07-25 14:20:17,795 DEBUG CREATE INDEX `core_genre_parent_id_aedf2984` ON `core_genre` (`parent_id`); (params ())
+2019-07-25 14:20:17,847 DEBUG (0.052) CREATE INDEX `core_genre_parent_id_aedf2984` ON `core_genre` (`parent_id`); args=()
+2019-07-25 14:20:17,850 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-25 14:20:17,853 DEBUG (0.001) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('core', '0002_genre', '2019-07-25 14:20:17.851090'); args=['core', '0002_genre', '2019-07-25 14:20:17.851090']
+2019-07-25 14:20:17,862 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-25 14:20:17,865 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:20:17,884 DEBUG (0.017) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry'); args=('admin', 'logentry')
+2019-07-25 14:20:17,895 DEBUG (0.009) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+2019-07-25 14:20:17,897 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+2019-07-25 14:20:17,899 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission'); args=('auth', 'permission')
+2019-07-25 14:20:17,901 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group'); args=('auth', 'group')
+2019-07-25 14:20:17,907 DEBUG (0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3)
+2019-07-25 14:20:17,909 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+2019-07-25 14:20:17,912 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype'); args=('contenttypes', 'contenttype')
+2019-07-25 14:20:17,914 DEBUG (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(4,)
+2019-07-25 14:20:17,917 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+2019-07-25 14:20:17,919 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session'); args=('sessions', 'session')
+2019-07-25 14:20:17,921 DEBUG (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+2019-07-25 14:20:17,925 DEBUG (0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+2019-07-25 14:20:17,934 DEBUG (0.004) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'corsheaders'; args=('corsheaders',)
+2019-07-25 14:20:17,937 DEBUG (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework'; args=('rest_framework',)
+2019-07-25 14:20:17,939 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'user'); args=('core', 'user')
+2019-07-25 14:20:17,942 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'boss'); args=('core', 'boss')
+2019-07-25 14:20:17,944 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'emailverifyrecord'); args=('core', 'emailverifyrecord')
+2019-07-25 14:20:17,946 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'genre'); args=('core', 'genre')
+2019-07-25 14:20:17,949 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'genre'); args=('core', 'genre')
+2019-07-25 14:20:17,955 DEBUG (0.002) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('core', 'genre'); args=['core', 'genre']
+2019-07-25 14:20:17,991 DEBUG (0.008) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (8, 9, 6, 7) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(8, 9, 6, 7)
+2019-07-25 14:20:17,995 DEBUG (0.002) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add genre', 9, 'add_genre'), ('Can change genre', 9, 'change_genre'), ('Can delete genre', 9, 'delete_genre'), ('Can view genre', 9, 'view_genre'); args=('Can add genre', 9, 'add_genre', 'Can change genre', 9, 'change_genre', 'Can delete genre', 9, 'delete_genre', 'Can view genre', 9, 'view_genre')
+2019-07-25 14:20:18,006 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'core'; args=('core',)
+2019-07-25 14:20:18,009 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'mptt'; args=('mptt',)
+2019-07-25 14:21:13,414 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:21:13,417 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:21:13,421 DEBUG (0.003) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` WHERE (`core_genre`.`name` > 'Rock' AND `core_genre`.`parent_id` IS NULL) ORDER BY `core_genre`.`name` ASC, `core_genre`.`tree_id` ASC  LIMIT 1; args=('Rock',)
+2019-07-25 14:21:13,422 DEBUG (0.001) SELECT MAX(`core_genre`.`tree_id`) AS `tree_id__max` FROM `core_genre`; args=()
+2019-07-25 14:21:13,425 DEBUG (0.001) INSERT INTO `core_genre` (`name`, `parent_id`, `lft`, `rght`, `tree_id`, `level`) VALUES ('Rock', NULL, 1, 2, 1, 0); args=['Rock', None, 1, 2, 1, 0]
+2019-07-25 14:22:35,601 DEBUG (0.013) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` WHERE (`core_genre`.`name` > 'Blues' AND `core_genre`.`parent_id` IS NULL) ORDER BY `core_genre`.`name` ASC, `core_genre`.`tree_id` ASC  LIMIT 1; args=('Blues',)
+2019-07-25 14:22:35,608 DEBUG (0.003) UPDATE `core_genre` SET `tree_id` = (`core_genre`.`tree_id` + 1) WHERE `core_genre`.`tree_id` > 0; args=(1, 0)
+2019-07-25 14:22:35,659 DEBUG (0.001) INSERT INTO `core_genre` (`name`, `parent_id`, `lft`, `rght`, `tree_id`, `level`) VALUES ('Blues', NULL, 1, 2, 1, 0); args=['Blues', None, 1, 2, 1, 0]
+2019-07-25 14:22:48,206 DEBUG (0.002) SELECT `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`level`, `core_genre`.`tree_id` FROM `core_genre` WHERE `core_genre`.`id` = 1 ORDER BY `core_genre`.`tree_id` ASC, `core_genre`.`lft` ASC  LIMIT 1; args=(1,)
+2019-07-25 14:22:48,311 DEBUG (0.104) 
+            UPDATE `core_genre`
+            SET `lft` = CASE
+                    WHEN `lft` > 1
+                        THEN `lft` + 2
+                    ELSE `lft` END,
+                `rght` = CASE
+                    WHEN `rght` > 1
+                        THEN `rght` + 2
+                    ELSE `rght` END
+            WHERE `tree_id` = 2
+              AND (`lft` > 1 OR `rght` > 1); args=[1, 2, 1, 2, 2, 1, 1]
+2019-07-25 14:22:48,316 DEBUG (0.003) INSERT INTO `core_genre` (`name`, `parent_id`, `lft`, `rght`, `tree_id`, `level`) VALUES ('Hard Rock', 1, 2, 3, 2, 1); args=['Hard Rock', 1, 2, 3, 2, 1]
+2019-07-25 14:23:15,484 DEBUG (0.002) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` WHERE (`core_genre`.`name` > 'Pop Rock' AND `core_genre`.`parent_id` = 1) ORDER BY `core_genre`.`name` ASC, `core_genre`.`lft` ASC  LIMIT 1; args=('Pop Rock', 1)
+2019-07-25 14:23:15,488 DEBUG (0.002) SELECT `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`level`, `core_genre`.`tree_id` FROM `core_genre` WHERE `core_genre`.`id` = 1 ORDER BY `core_genre`.`tree_id` ASC, `core_genre`.`lft` ASC  LIMIT 1; args=(1,)
+2019-07-25 14:23:15,510 DEBUG (0.021) 
+            UPDATE `core_genre`
+            SET `lft` = CASE
+                    WHEN `lft` > 3
+                        THEN `lft` + 2
+                    ELSE `lft` END,
+                `rght` = CASE
+                    WHEN `rght` > 3
+                        THEN `rght` + 2
+                    ELSE `rght` END
+            WHERE `tree_id` = 2
+              AND (`lft` > 3 OR `rght` > 3); args=[3, 2, 3, 2, 2, 3, 3]
+2019-07-25 14:23:15,514 DEBUG (0.002) INSERT INTO `core_genre` (`name`, `parent_id`, `lft`, `rght`, `tree_id`, `level`) VALUES ('Pop Rock', 1, 4, 5, 2, 1); args=['Pop Rock', 1, 4, 5, 2, 1]
+2019-07-25 14:23:44,834 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:23:44,835 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:23:44,839 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-25 14:23:44,843 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:24:58,071 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:24:58,072 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:24:58,075 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:24:58,084 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:25:02,590 DEBUG (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:25:02,600 DEBUG (0.009) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:25:02,605 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-25 14:25:02,611 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:25:57,304 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:25:57,306 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:25:57,308 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:25:57,312 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:26:14,860 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:26:14,861 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:26:14,864 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:26:14,867 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:28:26,332 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:28:26,334 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:28:26,341 DEBUG (0.006) SHOW FULL TABLES; args=None
+2019-07-25 14:28:26,347 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:30:25,334 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:30:25,335 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:30:25,338 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:30:25,341 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:30:33,810 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:30:33,811 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:30:33,814 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-25 14:30:33,819 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:31:07,408 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:31:07,409 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:31:07,412 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:31:07,416 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:31:13,320 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:31:13,321 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:31:13,323 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-25 14:31:13.311622' AND `django_session`.`session_key` = '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw'); args=('2019-07-25 14:31:13.311622', '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw')
+2019-07-25 14:31:13,327 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-25 14:31:19,532 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:31:19,534 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:31:19,536 DEBUG (0.002) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` ORDER BY `core_genre`.`tree_id` ASC, `core_genre`.`lft` ASC  LIMIT 21; args=()
+2019-07-25 14:31:19,539 DEBUG (0.002) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` ORDER BY `core_genre`.`tree_id` ASC, `core_genre`.`lft` ASC  LIMIT 21; args=()
+2019-07-25 14:31:19,542 DEBUG (0.002) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` ORDER BY `core_genre`.`tree_id` ASC, `core_genre`.`lft` ASC  LIMIT 21; args=()
+2019-07-25 14:31:19,546 DEBUG (0.002) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` ORDER BY `core_genre`.`tree_id` ASC, `core_genre`.`lft` ASC  LIMIT 21; args=()
+2019-07-25 14:31:19,554 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-25 14:31:19.550603' AND `django_session`.`session_key` = '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw'); args=('2019-07-25 14:31:19.550603', '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw')
+2019-07-25 14:31:19,558 DEBUG (0.003) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-25 14:32:09,450 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:32:09,451 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:32:09,453 DEBUG (0.001) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` ORDER BY `core_genre`.`tree_id` ASC, `core_genre`.`lft` ASC  LIMIT 21; args=()
+2019-07-25 14:35:50,394 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:35:50,395 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:35:50,397 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:35:50,401 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:35:56,985 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:35:56,987 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:35:56,992 DEBUG (0.005) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-25 14:35:56.975109' AND `django_session`.`session_key` = '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw'); args=('2019-07-25 14:35:56.975109', '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw')
+2019-07-25 14:35:57,000 DEBUG (0.007) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-25 14:35:58,646 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:35:58,647 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:35:58,649 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-25 14:35:58.639167' AND `django_session`.`session_key` = '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw'); args=('2019-07-25 14:35:58.639167', '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw')
+2019-07-25 14:35:58,654 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-25 14:36:11,808 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:36:11,810 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:36:11,813 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-25 14:36:11.800911' AND `django_session`.`session_key` = '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw'); args=('2019-07-25 14:36:11.800911', '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw')
+2019-07-25 14:36:11,816 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-25 14:36:11,820 DEBUG (0.002) SELECT COUNT(*) AS `__count` FROM `core_genre`; args=()
+2019-07-25 14:36:11,830 DEBUG (0.002) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` ORDER BY `core_genre`.`id` ASC  LIMIT 4; args=()
+2019-07-25 14:36:32,739 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:36:32,741 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:36:32,745 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-25 14:36:32,749 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:36:52,917 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:36:52,918 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:36:52,922 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-25 14:36:52,925 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:36:55,741 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:36:55,742 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:36:55,744 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-25 14:36:55.728617' AND `django_session`.`session_key` = '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw'); args=('2019-07-25 14:36:55.728617', '9hz6m6dvrjbwn5dgn4ofm5km38nqq1jw')
+2019-07-25 14:36:55,750 DEBUG (0.003) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-25 14:36:55,756 DEBUG (0.002) SELECT COUNT(*) AS `__count` FROM `core_genre`; args=()
+2019-07-25 14:36:55,759 DEBUG (0.001) SELECT `core_genre`.`id`, `core_genre`.`name`, `core_genre`.`parent_id`, `core_genre`.`lft`, `core_genre`.`rght`, `core_genre`.`tree_id`, `core_genre`.`level` FROM `core_genre` ORDER BY `core_genre`.`id` ASC  LIMIT 4; args=()
+2019-07-25 14:39:28,842 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:39:28,844 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:39:28,846 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:39:28,850 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:39:44,646 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:39:44,647 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:39:44,651 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-25 14:39:44,655 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:41:36,643 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:41:36,644 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:41:36,648 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-25 14:41:36,651 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:41:59,253 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:41:59,254 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:41:59,256 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:41:59,260 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:42:22,205 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:42:22,206 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:42:22,210 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-25 14:42:22,215 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:42:45,642 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:42:45,643 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:42:45,646 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-25 14:42:45,650 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:43:13,905 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-25 14:43:13,906 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-25 14:43:13,907 DEBUG (0.001) SELECT @@sql_mode; args=None
+2019-07-25 14:43:14,375 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-25 14:43:14,380 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:43:14,383 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:43:14,384 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:43:14,400 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-25 14:43:14,407 DEBUG (0.001) SELECT @@LOWER_CASE_TABLE_NAMES; args=None
+2019-07-25 14:43:14,408 DEBUG RENAME TABLE `core_genre` TO `core_pagejson`; (params ())
+2019-07-25 14:43:14,491 DEBUG (0.083) RENAME TABLE `core_genre` TO `core_pagejson`; args=()
+2019-07-25 14:43:14,547 DEBUG (0.055) 
+            SELECT kc.`constraint_name`, kc.`column_name`,
+                kc.`referenced_table_name`, kc.`referenced_column_name`
+            FROM information_schema.key_column_usage AS kc
+            WHERE
+                kc.table_schema = DATABASE() AND
+                kc.table_name = 'core_pagejson'
+        ; args=['core_pagejson']
+2019-07-25 14:43:14,551 DEBUG (0.004) 
+            SELECT c.constraint_name, c.constraint_type
+            FROM information_schema.table_constraints AS c
+            WHERE
+                c.table_schema = DATABASE() AND
+                c.table_name = 'core_pagejson'
+        ; args=['core_pagejson']
+2019-07-25 14:43:14,565 DEBUG (0.014) SHOW INDEX FROM `core_pagejson`; args=None
+2019-07-25 14:43:14,566 DEBUG ALTER TABLE `core_pagejson` DROP FOREIGN KEY `core_genre_parent_id_aedf2984_fk_core_genre_id`; (params ())
+2019-07-25 14:43:14,590 DEBUG (0.023) ALTER TABLE `core_pagejson` DROP FOREIGN KEY `core_genre_parent_id_aedf2984_fk_core_genre_id`; args=()
+2019-07-25 14:43:14,590 DEBUG ALTER TABLE `core_pagejson` ADD CONSTRAINT `core_pagejson_parent_id_d0323bee_fk_core_pagejson_id` FOREIGN KEY (`parent_id`) REFERENCES `core_pagejson` (`id`); (params ())
+2019-07-25 14:43:14,680 DEBUG (0.089) ALTER TABLE `core_pagejson` ADD CONSTRAINT `core_pagejson_parent_id_d0323bee_fk_core_pagejson_id` FOREIGN KEY (`parent_id`) REFERENCES `core_pagejson` (`id`); args=()
+2019-07-25 14:43:14,693 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'genre'); args=('core', 'genre')
+2019-07-25 14:43:14,694 DEBUG (0.001) SAVEPOINT `s4440270272_x1`; args=None
+2019-07-25 14:43:14,696 DEBUG (0.001) UPDATE `django_content_type` SET `model` = 'pagejson' WHERE `django_content_type`.`id` = 9; args=('pagejson', 9)
+2019-07-25 14:43:14,697 DEBUG (0.001) RELEASE SAVEPOINT `s4440270272_x1`; args=None
+2019-07-25 14:43:14,703 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-25 14:43:14,706 DEBUG (0.002) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('core', '0003_auto_20190725_1442', '2019-07-25 14:43:14.703862'); args=['core', '0003_auto_20190725_1442', '2019-07-25 14:43:14.703862']
+2019-07-25 14:43:14,711 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-25 14:43:14,713 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-25 14:43:14,726 DEBUG (0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry'); args=('admin', 'logentry')
+2019-07-25 14:43:14,730 DEBUG (0.002) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+2019-07-25 14:43:14,732 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+2019-07-25 14:43:14,733 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission'); args=('auth', 'permission')
+2019-07-25 14:43:14,735 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group'); args=('auth', 'group')
+2019-07-25 14:43:14,737 DEBUG (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3)
+2019-07-25 14:43:14,739 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+2019-07-25 14:43:14,741 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype'); args=('contenttypes', 'contenttype')
+2019-07-25 14:43:14,743 DEBUG (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(4,)
+2019-07-25 14:43:14,745 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+2019-07-25 14:43:14,747 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session'); args=('sessions', 'session')
+2019-07-25 14:43:14,756 DEBUG (0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+2019-07-25 14:43:14,758 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+2019-07-25 14:43:14,760 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'corsheaders'; args=('corsheaders',)
+2019-07-25 14:43:14,763 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework'; args=('rest_framework',)
+2019-07-25 14:43:14,765 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'user'); args=('core', 'user')
+2019-07-25 14:43:14,766 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'boss'); args=('core', 'boss')
+2019-07-25 14:43:14,768 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'emailverifyrecord'); args=('core', 'emailverifyrecord')
+2019-07-25 14:43:14,770 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'pagejson'); args=('core', 'pagejson')
+2019-07-25 14:43:14,772 DEBUG (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (8, 9, 6, 7) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(8, 9, 6, 7)
+2019-07-25 14:43:14,775 DEBUG (0.001) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add page json', 9, 'add_pagejson'), ('Can change page json', 9, 'change_pagejson'), ('Can delete page json', 9, 'delete_pagejson'), ('Can view page json', 9, 'view_pagejson'); args=('Can add page json', 9, 'add_pagejson', 'Can change page json', 9, 'change_pagejson', 'Can delete page json', 9, 'delete_pagejson', 'Can view page json', 9, 'view_pagejson')
+2019-07-25 14:43:14,791 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'core'; args=('core',)
+2019-07-25 14:43:14,794 DEBUG (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'mptt'; args=('mptt',)

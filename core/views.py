@@ -6,6 +6,11 @@ from .models import User
 from .serializers import UserSerializers
 from .baseviews import BaseViewSet
 
+import logging
+
+
+logger = logging.getLogger('core')
+
 
 class UserSet(BaseViewSet):
     """
@@ -21,7 +26,7 @@ class UserSet(BaseViewSet):
 
 
 class CoreObtainJSONWebToken(ObtainJSONWebToken):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdminUser]
 
 
 class CoreRefreshJSONWebToken(RefreshJSONWebToken):
@@ -48,5 +53,5 @@ class CustomBackend(ModelBackend):
             if user.check_password(password):
                 return user
         except Exception as e:
-            print(e)
+            logger.error("{}".format(e), exc_info=True)
             return None

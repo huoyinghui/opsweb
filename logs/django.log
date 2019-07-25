@@ -492,3 +492,161 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [code_style] in
 2019-07-17 18:27:38 [django.server:124] [INFO] - "GET /api-auth/login/?next=/ HTTP/1.1" 200 2700
 2019-07-17 18:28:00 [django.server:124] [INFO] - "POST /api-auth/login/ HTTP/1.1" 302 0
 2019-07-17 18:28:00 [django.server:124] [INFO] - "GET / HTTP/1.1" 200 5464
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET / HTTP/1.1" 200 5236
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+2019-07-25 11:41:03 [django.server:124] [INFO] - "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+2019-07-25 11:41:03 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user\.(?P<format>[a-z0-9]+)/?$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)/$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^$' [name='api-root']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^\.(?P<format>[a-z0-9]+)/?$' [name='api-root']>], [<URLPattern 'docs/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-25 11:41:03 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user\.(?P<format>[a-z0-9]+)/?$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)/$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^$' [name='api-root']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^\.(?P<format>[a-z0-9]+)/?$' [name='api-root']>], [<URLPattern 'docs/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>
+2019-07-25 11:41:03 [django.server:124] [WARNING] - "GET /favicon.ico HTTP/1.1" 404 3498
+2019-07-25 11:41:08 [django.server:124] [INFO] - "GET /docs HTTP/1.1" 301 0
+2019-07-25 11:41:08 [django.server:124] [WARNING] - "GET /docs/ HTTP/1.1" 403 2057
+2019-07-25 11:41:08 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/app.bundle.css HTTP/1.1" 200 419
+2019-07-25 11:41:08 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/logo_small.png HTTP/1.1" 200 458
+2019-07-25 11:41:08 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/vendors.bundle.css HTTP/1.1" 200 153889
+2019-07-25 11:41:08 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/app.bundle.js HTTP/1.1" 200 1771
+2019-07-25 11:41:08 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/vendors.bundle.js HTTP/1.1" 200 1636116
+2019-07-25 11:41:14 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'rest_framework/login.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x105d62950>>, 'request': <WSGIRequest: GET '/api-auth/login/?next=/docs/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x105d628c8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x105d2c438>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x105c8edd8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x105c8ee10>, 'next': '/docs/', 'site': <django.contrib.sites.requests.RequestSite object at 0x105d26898>, 'site_name': 'localhost:8000'}, {'block': <Block Node: head. Contents: [<TextNode: '\n\n      '>, <Block Node: meta. Contents: [<TextNode: '\n        <meta http-equiv'>]>, <TextNode: '\n\n      <title>'>, <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>, <TextNode: '</title>\n\n      '>, <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x105d4bf60>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x105d82048>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x105d820f0>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x105d82128>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>, <TextNode: '\n\n    '>]>}, {'block': <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>}]
+2019-07-25 11:41:14 [django.template:872] [DEBUG] - Exception while resolving variable 'code_style' in template 'rest_framework/login.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'code_style'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [code_style] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x105d62950>>, 'request': <WSGIRequest: GET '/api-auth/login/?next=/docs/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x105d628c8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x105d2c438>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x105c8edd8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <AuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'view': <django.contrib.auth.views.LoginView object at 0x105c8ee10>, 'next': '/docs/', 'site': <django.contrib.sites.requests.RequestSite object at 0x105d26898>, 'site_name': 'localhost:8000'}, {'block': <Block Node: head. Contents: [<TextNode: '\n\n      '>, <Block Node: meta. Contents: [<TextNode: '\n        <meta http-equiv'>]>, <TextNode: '\n\n      <title>'>, <Block Node: title. Contents: [<IfNode>, <TextNode: 'Django REST framework'>]>, <TextNode: '</title>\n\n      '>, <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x105d4bf60>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x105d82048>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x105d820f0>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x105d82128>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>, <TextNode: '\n\n    '>]>}, {'block': <Block Node: style. Contents: [<TextNode: '\n        '>, <Block Node: bootstrap_theme. Contents: [<TextNode: '\n          <link rel="sty'>, <django.templatetags.static.StaticNode object at 0x105d4bf60>, <TextNode: '"/>\n          <link rel="'>, <django.templatetags.static.StaticNode object at 0x105d82048>, <TextNode: '"/>\n        '>]>, <TextNode: '\n\n        <link rel="styl'>, <django.templatetags.static.StaticNode object at 0x105d820f0>, <TextNode: '"/>\n        <link rel="st'>, <django.templatetags.static.StaticNode object at 0x105d82128>, <TextNode: '"/>\n        '>, <IfNode>, <TextNode: '\n      '>]>}]
+2019-07-25 11:41:14 [django.server:124] [INFO] - "GET /api-auth/login/?next=/docs/ HTTP/1.1" 200 2705
+2019-07-25 11:41:16 [django.server:124] [INFO] - "POST /api-auth/login/ HTTP/1.1" 302 0
+2019-07-25 11:41:16 [django.server:124] [INFO] - "GET /docs/ HTTP/1.1" 200 6579
+2019-07-25 11:47:04 [django.server:124] [WARNING] - "POST /api-token-auth/ HTTP/1.1" 403 49
+2019-07-25 11:47:18 [django.server:124] [WARNING] - "POST /api-token-auth/ HTTP/1.1" 403 49
+2019-07-25 11:48:45 [django.server:124] [INFO] - "GET /core/user/?page=1 HTTP/1.1" 200 126
+2019-07-25 11:50:39 [django.server:124] [WARNING] - "POST /api-token-auth/ HTTP/1.1" 403 49
+2019-07-25 11:51:06 [django.server:124] [WARNING] - "POST /api-token-auth/ HTTP/1.1" 403 49

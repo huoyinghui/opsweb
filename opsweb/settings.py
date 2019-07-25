@@ -307,6 +307,11 @@ LOGGING = {
             'handlers': ['console', 'django_db_backends_handler'],
             'level': 'DEBUG',
             'propagate': False,
+        },
+        'core': {
+            'handlers': ['console', 'django_db_backends_handler'],
+            'level': 'DEBUG',
+            'propagate': False,
         }
     },
     'root': {

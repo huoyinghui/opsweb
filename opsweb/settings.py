@@ -9,9 +9,14 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
+import datetime
 import os
 import sys
-import datetime
+
+from config.db_setting import DATABASES
+from config.jwt_setting import JWT_AUTH
+# 导入配置
+from config.log_setting import LOGGING
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -96,45 +101,6 @@ AUTHENTICATION_BACKENDS = (
     'core.views.CustomBackend',
 )
 
-# jwt setting
-JWT_AUTH = {
-    'JWT_ENCODE_HANDLER':
-        'rest_framework_jwt.utils.jwt_encode_handler',
-
-    'JWT_DECODE_HANDLER':
-        'rest_framework_jwt.utils.jwt_decode_handler',
-
-    'JWT_PAYLOAD_HANDLER':
-        'rest_framework_jwt.utils.jwt_payload_handler',
-
-    'JWT_PAYLOAD_GET_USER_ID_HANDLER':
-        'rest_framework_jwt.utils.jwt_get_user_id_from_payload_handler',
-
-    'JWT_RESPONSE_PAYLOAD_HANDLER':
-        'rest_framework_jwt.utils.jwt_response_payload_handler',
-
-    'JWT_SECRET_KEY': SECRET_KEY,
-    'JWT_GET_USER_SECRET_KEY': None,
-    'JWT_PUBLIC_KEY': None,
-    'JWT_PRIVATE_KEY': None,
-    'JWT_ALGORITHM': 'HS256',
-    'JWT_VERIFY': True,
-    'JWT_VERIFY_EXPIRATION': True,
-    'JWT_LEEWAY': 0,
-    # 失效时间
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=3000),
-    'JWT_AUDIENCE': None,
-    'JWT_ISSUER': None,
-
-    'JWT_ALLOW_REFRESH': False,
-    'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(days=7),
-
-    'JWT_AUTH_HEADER_PREFIX': 'JWT',
-    'JWT_AUTH_COOKIE': None,
-
-}
-
-
 ROOT_URLCONF = 'opsweb.urls'
 
 # 跨域设置
@@ -186,30 +152,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'opsweb.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-'''
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'opsweb',
-        'USER': 'root',
-        'PASSWORD': 'mysecret249password',
-        'HOST': '0.0.0.0',
-        'PORT': '3306',
-        # 'OPTIONS': {
-        #     'init_command': "SET storage_engine=INNODB;SET sql_mode='STRICT_TRANS_TABLES'"
-        # }
-    },
-}
 
 AUTH_USER_MODEL = "core.User"
 # Password validation
@@ -231,95 +173,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # 日志配置
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {'format': '%(asctime)s %(levelname)s %(message)s'},
-        'simple': {'format': '%(levelname)s %(message)s'},
-        'default': {
-            'format': '%(asctime)s [%(name)s:%(lineno)d] [%(levelname)s] - %(message)s',
-            'datefmt': '%Y-%m-%d %H:%M:%S'
-        }
-    },
-    'handlers': {
-        'null': {
-            'level': 'DEBUG',
-            'class': 'logging.NullHandler',
-        },
-        # '''
-        # 'sentry': {
-        #     'level': 'ERROR',
-        #     'class': 'raven.contrib.django.raven_compat.handlers.SentryHandler',
-        #     'tags': {'custom-tag': 'x'},
-        # },
-        # '''
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-            'formatter': 'default'
-        },
-        'django': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': os.path.join(BASE_DIR, 'logs', 'django.log'),
-            'formatter': 'default'
+# LOGGING = {}
 
-        },
-        'root_handler': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.TimedRotatingFileHandler',
-            'formatter': 'default',
-            'filename': os.path.join(BASE_DIR, 'logs', 'server.log'),
-            'when': 'D',
-            'interval': 1,
-            'encoding': 'utf8',
-        },
-        'django_request_handler': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.TimedRotatingFileHandler',
-            'formatter': 'default',
-            'filename': os.path.join(BASE_DIR, 'logs', 'request.log'),
-            'when': 'D',
-            'interval': 7,
-            'encoding': 'utf8',
-        },
-        'django_db_backends_handler': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.TimedRotatingFileHandler',
-            'formatter': 'verbose',
-            'filename': os.path.join(BASE_DIR, 'logs', 'db_backends.log'),
-            'when': 'D',
-            'interval': 7,
-        }
-    },
-    'loggers': {
-        'django': {
-            'level': 'DEBUG',
-            'handlers': ['django'],
-            'propagate': False
-        },
-        'django.request': {
-            'handlers': ['console', 'django_request_handler'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-        'django.db.backends': {
-            'handlers': ['console', 'django_db_backends_handler'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-        'core': {
-            'handlers': ['console', 'django_db_backends_handler'],
-            'level': 'DEBUG',
-            'propagate': False,
-        }
-    },
-    'root': {
-        'level': 'DEBUG',
-        'handlers': ['root_handler']
-    }
-}
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 LANGUAGE_CODE = 'zh-hans'

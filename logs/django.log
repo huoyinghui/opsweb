@@ -656,3 +656,116 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [code_style] in
 2019-07-25 14:35:58 [django.server:124] [INFO] - "GET /docs/ HTTP/1.1" 200 10198
 2019-07-25 14:36:11 [django.server:124] [INFO] - "GET /core/tree/?page=1 HTTP/1.1" 200 211
 2019-07-25 14:36:55 [django.server:124] [INFO] - "GET /core/tree/?page=1 HTTP/1.1" 200 255
+2019-07-25 15:26:50 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user\.(?P<format>[a-z0-9]+)/?$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)/$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/$' [name='core_tree-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree\.(?P<format>[a-z0-9]+)/?$' [name='core_tree-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/(?P<pk>[^/.]+)/$' [name='core_tree-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='core_tree-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^$' [name='api-root']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^\.(?P<format>[a-z0-9]+)/?$' [name='api-root']>], [<URLPattern 'docs/'>], [<URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern '' [name='index']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'login/' [name='login']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'password_change/' [name='password_change']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'password_change/done/' [name='password_change_done']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'jsi18n/' [name='jsi18n']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'r/<int:content_type_id>/<path:object_id>/' [name='view_on_site']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLResolver <URLPattern list> (None:None) 'auth/group/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern '^(?P<app_label>auth)/$' [name='app_list']>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>]], 'path': 'admin/docs'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>
+2019-07-25 15:26:50 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user\.(?P<format>[a-z0-9]+)/?$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)/$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/$' [name='core_tree-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree\.(?P<format>[a-z0-9]+)/?$' [name='core_tree-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/(?P<pk>[^/.]+)/$' [name='core_tree-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='core_tree-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^$' [name='api-root']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^\.(?P<format>[a-z0-9]+)/?$' [name='api-root']>], [<URLPattern 'docs/'>], [<URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern '' [name='index']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'login/' [name='login']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'password_change/' [name='password_change']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'password_change/done/' [name='password_change_done']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'jsi18n/' [name='jsi18n']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'r/<int:content_type_id>/<path:object_id>/' [name='view_on_site']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLResolver <URLPattern list> (None:None) 'auth/group/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern '^(?P<app_label>auth)/$' [name='app_list']>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>]], 'path': 'admin/docs'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (None:None) 'auth/group/'>
+2019-07-25 15:26:50 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user\.(?P<format>[a-z0-9]+)/?$' [name='core_user-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)/$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/user/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='core_user-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/$' [name='core_tree-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree\.(?P<format>[a-z0-9]+)/?$' [name='core_tree-list']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/(?P<pk>[^/.]+)/$' [name='core_tree-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^core/tree/(?P<pk>[^/.]+)\.(?P<format>[a-z0-9]+)/?$' [name='core_tree-detail']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^$' [name='api-root']>], [<URLResolver <URLPattern list> (None:None) ''>, <URLPattern '^\.(?P<format>[a-z0-9]+)/?$' [name='api-root']>], [<URLPattern 'docs/'>], [<URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern '' [name='index']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'login/' [name='login']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'logout/' [name='logout']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'password_change/' [name='password_change']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'password_change/done/' [name='password_change_done']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'jsi18n/' [name='jsi18n']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern 'r/<int:content_type_id>/<path:object_id>/' [name='view_on_site']>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLResolver <URLPattern list> (None:None) 'auth/group/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>, <URLPattern '^(?P<app_label>auth)/$' [name='app_list']>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>]], 'path': 'admin/docs'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>
+2019-07-25 15:26:50 [django.server:124] [WARNING] - "GET /admin/docs HTTP/1.1" 404 6008
+2019-07-25 15:27:08 [django.server:124] [ERROR] - "GET /admin/doc/ HTTP/1.1" 500 89483

@@ -15,7 +15,7 @@ Including another URLconf
 """
 
 # from apps.account.router import account_router
-from django.contrib import admin
+from django.contrib import admin, admindocs
 from django.urls import path, include
 # from rest_framework_jwt.views import obtain_jwt_token
 from rest_framework.routers import DefaultRouter
@@ -33,6 +33,7 @@ router.registry.extend(core_router.registry)
 urlpatterns = [
     path(r'', include(router.urls)),
     path('docs/', schema_view),  # swagger doc
+    path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # swagger login
     path('api-token-auth/', CoreObtainJSONWebToken.as_view()),

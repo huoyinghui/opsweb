@@ -13,9 +13,6 @@ import logging
 logger = logging.getLogger('core')
 
 
-
-
-
 class CoreObtainJSONWebToken(ObtainJSONWebToken):
     permission_classes = [IsAdminUser]
 
@@ -72,3 +69,4 @@ class PageJsonSet(BaseViewSet):
     serializer_class = PageJsonSerializers
     permission_classes = [IsAdminUser]
     search_fields = ['level']
+

@@ -11,7 +11,10 @@ desc:
 """
 
 from .models import Boss, User, PageJson
+
 from rest_framework.serializers import ModelSerializer
+from mptt.templatetags.mptt_tags import cache_tree_children
+
 
 
 class BossSerializers(ModelSerializer):
@@ -44,7 +47,35 @@ class PageJsonSerializers(ModelSerializer):
         fields = ['id', 'name', 'level', 'parent_id']
 
 
+def recursive_node_to_dict(node):
+    """
+    递归获取节点
+    :param node:
+    :return:
+    """
+    result = {
+        'id': node.pk,
+        'name': node.name,
+        'level': node.level,
+    }
+    children = [recursive_node_to_dict(c) for c in node.get_children()]
+    if children:
+        result['children'] = children
+    return result
+
+
+def get_page_json_tree():
+    root_nodes = cache_tree_children(PageJson.objects.all())
+    nodes = []
+    for n in root_nodes:
+        nodes.append(recursive_node_to_dict(n))
+    return nodes
+
+
 def main():
+    import json
+    nodes = get_page_json_tree()
+    print(json.dumps(nodes, indent=4))
     pass
 
 

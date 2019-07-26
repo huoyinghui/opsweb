@@ -13,9 +13,9 @@ import datetime
 import os
 import sys
 
+# 导入配置
 from config.db_setting import DATABASES
 from config.jwt_setting import JWT_AUTH
-# 导入配置
 from config.log_setting import LOGGING
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -102,7 +102,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 ROOT_URLCONF = 'opsweb.urls'
-
+APPEND_SLASH = '/'
 # 跨域设置
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
@@ -137,7 +137,7 @@ CORS_ALLOW_HEADERS = (
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

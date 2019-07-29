@@ -16,7 +16,6 @@ from rest_framework.serializers import ModelSerializer
 from mptt.templatetags.mptt_tags import cache_tree_children
 
 
-
 class BossSerializers(ModelSerializer):
     """
     Boss序列化类
@@ -65,6 +64,10 @@ def recursive_node_to_dict(node):
 
 
 def get_page_json_tree():
+    """
+
+    :return:
+    """
     root_nodes = cache_tree_children(PageJson.objects.all())
     nodes = []
     for n in root_nodes:

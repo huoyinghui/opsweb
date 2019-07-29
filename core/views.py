@@ -41,7 +41,7 @@ class CustomBackend(ModelBackend):
             if user.check_password(password):
                 return user
         except Exception as e:
-            logger.error("{}".format(e), exc_info=True)
+            logger.error("CustomBackend.authenticate {}".format(e), exc_info=True)
             return None
 
 
@@ -57,6 +57,11 @@ class UserSet(BaseViewSet):
     permission_classes = [IsAdminUser]
     search_fields = ['level']
 
+
+# class LoginView():
+#     permission_classes = ()
+#     authentication_classes = ()
+#     serializer_class = serializers.LoginSerializer
 
 class PageJsonSet(BaseViewSet):
     """

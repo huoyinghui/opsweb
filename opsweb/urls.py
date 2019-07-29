@@ -15,9 +15,10 @@ Including another URLconf
 """
 
 # from apps.account.router import account_router
-from django.contrib import admin, admindocs
+from django.contrib import admin
 from django.urls import path, include
-# from rest_framework_jwt.views import obtain_jwt_token
+from django.conf import settings
+from django.views.generic import TemplateView
 from rest_framework.routers import DefaultRouter
 # swagger pakeage
 from rest_framework.schemas import get_schema_view
@@ -31,7 +32,8 @@ router = DefaultRouter()
 router.registry.extend(core_router.registry)
 
 urlpatterns = [
-    path(r'', include(router.urls)),
+    path(r'api/', include(router.urls)),
+    path('', TemplateView.as_view(template_name="index.html"), name="index"),
     path('docs/', schema_view),  # swagger doc
     path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
@@ -39,3 +41,9 @@ urlpatterns = [
     path('api-token-auth/', CoreObtainJSONWebToken.as_view()),
 ]
 
+
+if settings.DEBUG:
+    from django.contrib.staticfiles import views
+    urlpatterns += [
+        path(r'static/', views.serve),
+    ]

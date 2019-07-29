@@ -42,3 +42,9 @@ python manage.py migrate
 #启动
 python manage.py  runserver 0:8000
 ```
+
+### frontend
+[webpack参考](https://www.jianshu.com/p/937b2cc758c3)
+```
+./node_modules/.bin/webpack-cli --config webpack.config.js
+```

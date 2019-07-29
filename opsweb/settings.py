@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'core',
     'mptt',
+    'webpack_loader',
     # 'apps.account',
 ]
 
@@ -191,7 +192,16 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-# TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
+STATIC_ROOT = '../frontend/build/static'
+
+
+# WEBPACK_LOADER = {
+#     'DEFAULT': {
+#         'BUNDLE_DIR_NAME': 'bundles/',
+#         'STATS_FILE': os.path.join(BASE_DIR, 'frontend/webpack-stats.json'),
+#     }
+# }
+# TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
 
 PROJ_SETTING_MODE = os.getenv('MODE', 'LOCAL')
 try:

@@ -79,3 +79,297 @@ Traceback (most recent call last):
 django.template.exceptions.TemplateDoesNotExist: index.html
 2019-07-29 18:13:56 [django.request:228] [WARNING] - Not Found: /accounts/profile/
 2019-07-29 18:23:50 [django.request:228] [WARNING] - Forbidden: /docs/
+2019-07-29 18:35:26 [django.request:228] [ERROR] - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+2019-07-29 18:35:33 [django.request:228] [ERROR] - Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'opsweb.xadmin_usersettings' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/dashboard.py", line 592, in get
+    self.widgets = self.get_widgets()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 49, in filter_chain
+    return func()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/dashboard.py", line 549, in get_widgets
+    if len(portal_pos):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'opsweb.xadmin_usersettings' doesn't exist")
+2019-07-29 18:36:11 [django.request:228] [ERROR] - Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'opsweb.xadmin_usersettings' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/dashboard.py", line 592, in get
+    self.widgets = self.get_widgets()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 49, in filter_chain
+    return func()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/dashboard.py", line 549, in get_widgets
+    if len(portal_pos):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'opsweb.xadmin_usersettings' doesn't exist")
+2019-07-29 18:36:15 [django.request:228] [WARNING] - Not Found: /
+2019-07-29 18:36:20 [django.request:228] [ERROR] - Internal Server Error: /xadmin/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'opsweb.xadmin_usersettings' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/dashboard.py", line 592, in get
+    self.widgets = self.get_widgets()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 49, in filter_chain
+    return func()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/xadmin/views/dashboard.py", line 549, in get_widgets
+    if len(portal_pos):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 1183, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 516, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 727, in _read_query_result
+    result.read()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/connections.py", line 683, in _read_packet
+    packet.check_error()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'opsweb.xadmin_usersettings' doesn't exist")

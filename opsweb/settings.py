@@ -51,7 +51,9 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'core',
     'mptt',
-    'webpack_loader',
+    # 'webpack_loader',
+    'xadmin',         # 添加 xadmin
+    'crispy_forms',   # 添加 xadmin
     # 'apps.account',
 ]
 

@@ -5403,3 +5403,1086 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [code_style] in
 2019-07-29 18:24:10 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/app.bundle.js HTTP/1.1" 200 1771
 2019-07-29 18:24:10 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/vendors.bundle.css HTTP/1.1" 200 153889
 2019-07-29 18:24:10 [django.server:124] [INFO] - "GET /static/rest_framework_swagger/bundles/vendors.bundle.js HTTP/1.1" 200 1636116
+2019-07-29 18:35:26 [django.server:124] [ERROR] - "GET / HTTP/1.1" 500 92275
+2019-07-29 18:35:32 [django.server:124] [INFO] - "GET /xadmin HTTP/1.1" 301 0
+2019-07-29 18:35:33 [django.server:124] [ERROR] - "GET /xadmin/ HTTP/1.1" 500 238529
+2019-07-29 18:36:11 [django.server:124] [ERROR] - "GET /xadmin/ HTTP/1.1" 500 238664
+2019-07-29 18:36:15 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) 'api/'>], [<URLPattern 'docs/'>], [<URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <URLPattern list> (xadmin:xadmin) 'xadmin/'>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>], [<URLPattern 'static/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (None:None) 'api/'>
+2019-07-29 18:36:15 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) 'api/'>], [<URLPattern 'docs/'>], [<URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <URLPattern list> (xadmin:xadmin) 'xadmin/'>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>], [<URLPattern 'static/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>
+2019-07-29 18:36:15 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) 'api/'>], [<URLPattern 'docs/'>], [<URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <URLPattern list> (xadmin:xadmin) 'xadmin/'>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>], [<URLPattern 'static/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+2019-07-29 18:36:15 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) 'api/'>], [<URLPattern 'docs/'>], [<URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <URLPattern list> (xadmin:xadmin) 'xadmin/'>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>], [<URLPattern 'static/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (xadmin:xadmin) 'xadmin/'>
+2019-07-29 18:36:15 [django.template:872] [DEBUG] - Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (None:None) 'api/'>], [<URLPattern 'docs/'>], [<URLResolver <module 'django.contrib.admindocs.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/admindocs/urls.py'> (None:None) 'admin/doc/'>], [<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <URLPattern list> (xadmin:xadmin) 'xadmin/'>], [<URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api-token-auth/'>], [<URLPattern 'static/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_framework.urls' from '/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>
+2019-07-29 18:36:15 [django.server:124] [WARNING] - "GET / HTTP/1.1" 404 2678
+2019-07-29 18:36:20 [django.server:124] [ERROR] - "GET /xadmin/ HTTP/1.1" 500 238529
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'LANGUAGE_CODE' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x10d1f8620>>, 'request': <WSGIRequest: GET '/xadmin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d45ee80>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10d0cf518>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'admin_view': <xadmin.sites.IndexViewDashboardCommAdminViewBaseAdminViewBaseAdminObjectViewobject object at 0x10d20b278>, 'media': Media(css={'screen': ['/static/xadmin/css/xadmin.page.dashboard.css']}, js=['/static/xadmin/js/xadmin.page.dashboard.js', '/static/xadmin/js/xadmin.plugin.portal.js']), 'base_template': 'xadmin/base_site.html', 'menu_template': 'xadmin/includes/sitemenu_default.html', 'nav_menu': [{'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}, {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}, {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}], 'site_title': 'Django Xadmin', 'site_footer': '我的公司', 'breadcrumbs': [{'url': '/xadmin/', 'title': '首页'}], 'title': '主页面', 'icon': 'fa fa-dashboard', 'portal_key': 'dashboard:home:pos', 'columns': [], 'has_add_widget_permission': True, 'add_widget_url': '/xadmin/xadmin/userwidget/add/?user=1&page_id=home&_redirect=/xadmin/'}]
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'LANGUAGE_BIDI' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_BIDI'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_BIDI'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_BIDI'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_BIDI] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x10d1f8620>>, 'request': <WSGIRequest: GET '/xadmin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d45ee80>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10d0cf518>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'admin_view': <xadmin.sites.IndexViewDashboardCommAdminViewBaseAdminViewBaseAdminObjectViewobject object at 0x10d20b278>, 'media': Media(css={'screen': ['/static/xadmin/css/xadmin.page.dashboard.css']}, js=['/static/xadmin/js/xadmin.page.dashboard.js', '/static/xadmin/js/xadmin.plugin.portal.js']), 'base_template': 'xadmin/base_site.html', 'menu_template': 'xadmin/includes/sitemenu_default.html', 'nav_menu': [{'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}, {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}, {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}], 'site_title': 'Django Xadmin', 'site_footer': '我的公司', 'breadcrumbs': [{'url': '/xadmin/', 'title': '首页'}], 'title': '主页面', 'icon': 'fa fa-dashboard', 'portal_key': 'dashboard:home:pos', 'columns': [], 'has_add_widget_permission': True, 'add_widget_url': '/xadmin/xadmin/userwidget/add/?user=1&page_id=home&_redirect=/xadmin/'}]
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'LANGUAGE_BIDI' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_BIDI'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_BIDI'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_BIDI'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_BIDI] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x10d1f8620>>, 'request': <WSGIRequest: GET '/xadmin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d45ee80>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10d0cf518>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'admin_view': <xadmin.sites.IndexViewDashboardCommAdminViewBaseAdminViewBaseAdminObjectViewobject object at 0x10d20b278>, 'media': Media(css={'screen': ['/static/xadmin/css/xadmin.page.dashboard.css']}, js=['/static/xadmin/js/xadmin.page.dashboard.js', '/static/xadmin/js/xadmin.plugin.portal.js']), 'base_template': 'xadmin/base_site.html', 'menu_template': 'xadmin/includes/sitemenu_default.html', 'nav_menu': [{'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}, {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}, {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}], 'site_title': 'Django Xadmin', 'site_footer': '我的公司', 'breadcrumbs': [{'url': '/xadmin/', 'title': '首页'}], 'title': '主页面', 'icon': 'fa fa-dashboard', 'portal_key': 'dashboard:home:pos', 'columns': [], 'has_add_widget_permission': True, 'add_widget_url': '/xadmin/xadmin/userwidget/add/?user=1&page_id=home&_redirect=/xadmin/'}]
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'site_theme' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'site_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'site_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'site_theme'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [site_theme] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x10d1f8620>>, 'request': <WSGIRequest: GET '/xadmin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d45ee80>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10d0cf518>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'admin_view': <xadmin.sites.IndexViewDashboardCommAdminViewBaseAdminViewBaseAdminObjectViewobject object at 0x10d20b278>, 'media': Media(css={'screen': ['/static/xadmin/css/xadmin.page.dashboard.css']}, js=['/static/xadmin/js/xadmin.page.dashboard.js', '/static/xadmin/js/xadmin.plugin.portal.js']), 'base_template': 'xadmin/base_site.html', 'menu_template': 'xadmin/includes/sitemenu_default.html', 'nav_menu': [{'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}, {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}, {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}], 'site_title': 'Django Xadmin', 'site_footer': '我的公司', 'breadcrumbs': [{'url': '/xadmin/', 'title': '首页'}], 'title': '主页面', 'icon': 'fa fa-dashboard', 'portal_key': 'dashboard:home:pos', 'columns': [], 'has_add_widget_permission': True, 'add_widget_url': '/xadmin/xadmin/userwidget/add/?user=1&page_id=home&_redirect=/xadmin/'}]
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'LANGUAGE_CODE' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x10d1f8620>>, 'request': <WSGIRequest: GET '/xadmin/'>, 'user': <SimpleLazyObject: <User: admin>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x10d45ee80>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x10d0cf518>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'admin_view': <xadmin.sites.IndexViewDashboardCommAdminViewBaseAdminViewBaseAdminObjectViewobject object at 0x10d20b278>, 'media': Media(css={'screen': ['/static/xadmin/css/xadmin.page.dashboard.css']}, js=['/static/xadmin/js/xadmin.page.dashboard.js', '/static/xadmin/js/xadmin.plugin.portal.js']), 'base_template': 'xadmin/base_site.html', 'menu_template': 'xadmin/includes/sitemenu_default.html', 'nav_menu': [{'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}, {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}, {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}], 'site_title': 'Django Xadmin', 'site_footer': '我的公司', 'breadcrumbs': [{'url': '/xadmin/', 'title': '首页'}], 'title': '主页面', 'icon': 'fa fa-dashboard', 'portal_key': 'dashboard:home:pos', 'columns': [], 'has_add_widget_permission': True, 'add_widget_url': '/xadmin/xadmin/userwidget/add/?user=1&page_id=home&_redirect=/xadmin/', 'indexurl': '/xadmin/'}]
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'search_models' in template 'xadmin/blocks/comm.top.topnav.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'search_models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'search_models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'search_models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [search_models] in [{'True': True, 'False': False, 'None': None}, {'add_models': [{'title': '增加 用户小组件', 'url': '/xadmin/xadmin/userwidget/add/', 'model': <class 'xadmin.models.UserWidget'>}, {'title': '增加 书签', 'url': '/xadmin/xadmin/bookmark/add/', 'model': <class 'xadmin.models.Bookmark'>}, {'title': '增加 组', 'url': '/xadmin/auth/group/add/', 'model': <class 'django.contrib.auth.models.Group'>}, {'title': '增加 用户信息', 'url': '/xadmin/core/user/add/', 'model': <class 'core.models.User'>}, {'title': '增加 权限', 'url': '/xadmin/auth/permission/add/', 'model': <class 'django.contrib.auth.models.Permission'>}, {'title': '增加 用户设置', 'url': '/xadmin/xadmin/usersettings/add/', 'model': <class 'xadmin.models.UserSettings'>}, {'title': '增加 日志记录', 'url': '/xadmin/xadmin/log/add/', 'model': <class 'xadmin.models.Log'>}]}]
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'add_models' in template 'xadmin/blocks/comm.top.topnav.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'add_models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'Context' has no attribute 'add_models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'add_models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [add_models] in [{'True': True, 'False': False, 'None': None}, {'search_models': [{'title': '搜索组', 'url': '/xadmin/auth/group/', 'model': <class 'django.contrib.auth.models.Group'>}, {'title': '搜索用户信息', 'url': '/xadmin/core/user/', 'model': <class 'core.models.User'>}, {'title': '搜索日志记录', 'url': '/xadmin/xadmin/log/', 'model': <class 'xadmin.models.Log'>}], 'search_name': '_q_'}]
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'url' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in {'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'icon' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [icon] in {'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'url' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in {'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'url' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'icon' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [icon] in {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'url' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'url' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'icon' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [icon] in {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'url' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [url] in {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'icon' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [icon] in {'title': 'Core', 'menus': [{'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}], 'first_icon': 'fa fa-user', 'first_url': '/xadmin/core/user/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '用户信息', 'url': '/xadmin/core/user/', 'icon': 'fa fa-user', 'order': 3}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'icon' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [icon] in {'title': '管理', 'menus': [{'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}], 'first_icon': 'fa fa-cog', 'first_url': '/xadmin/xadmin/log/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '日志记录', 'url': '/xadmin/xadmin/log/', 'icon': 'fa fa-cog', 'order': 6}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'icon' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'icon'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [icon] in {'title': '认证和授权', 'menus': [{'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}, {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}], 'first_icon': 'fa fa-group', 'first_url': '/xadmin/auth/group/'}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '组', 'url': '/xadmin/auth/group/', 'icon': 'fa fa-group', 'order': 2}
+2019-07-29 18:36:59 [django.template:872] [DEBUG] - Exception while resolving variable 'selected' in template 'xadmin/views/dashboard.html'.
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'selected'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [selected] in {'title': '权限', 'url': '/xadmin/auth/permission/', 'icon': 'fa fa-lock', 'order': 4}
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /xadmin/ HTTP/1.1" 200 9398
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+2019-07-29 18:36:59 [django.server:124] [INFO] - "GET /xadmin/jsi18n/ HTTP/1.1" 200 7684
+2019-07-29 18:37:00 [django.server:124] [INFO] - "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432

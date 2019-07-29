@@ -47,4 +47,37 @@ python manage.py  runserver 0:8000
 [webpack参考](https://www.jianshu.com/p/937b2cc758c3)
 ```
 ./node_modules/.bin/webpack-cli --config webpack.config.js
+
+```
+
+### nginx
+```
+       location /static {
+           autoindex off;
+           alias ~/xxx/frontend/build/static;
+       }
+
+        location / {
+            root   ~/xxx/frontend/build;
+            index  index.html index.htm;
+        }
+
+        location /api {
+            proxy_pass http://localhost:8000/api;
+        }
+
+        location /admin {
+            proxy_pass http://localhost:8000/admin;
+        }
+        location /docs {
+            proxy_pass http://localhost:8000/docs;
+        }
+```
+### django static
+
+build/static 后端和前端共同维护，nginx 托管
+```
+STATIC_URL = '/static/'
+# python manage collectionstatic
+STATIC_ROOT = '../frontend/build/static'
 ```

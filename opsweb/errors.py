@@ -1,0 +1,104 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Author: 
+Email:
+
+date: 
+desc:
+
+"""
+
+
+class System(object):
+    ERROR = 4001
+    ERROR_DETAIL = 4002
+    DATE_FMT_ERROR = 4003
+    NOT_FOUND = 4004
+    FIELD_REQUIRED = 4005
+    FMT_ERROR = 4006
+    PARAMS_ERROR = 4007
+    NOT_OWNER = 4008
+
+
+class Account(object):
+    MOBILE_FORMAT = 1001
+    GET_CAPTCHA = 1002
+    CAPTCHA_ERROR = 1003
+    SIGNATURE = 1004
+    CODE = 1005
+    REFRESH_TOKEN = 1006
+    UNAUTHORIZED = 1007
+    MOBILE_REQUIRED = 1008
+    REQUESTS_MULTI = 1009
+    INVALID_CODE = 1010
+    ENCRYPTED_DATA = 1011
+    IV = 1012
+    DECRYPTED_DATA = 1013
+    AVATAR = 1014
+    NICK_NAME = 1015
+    USERNAME_OR_PASSWORD = 1016
+    TOKEN = 1017
+
+
+class Material(object):
+    MATERIAL = 1001
+
+
+class Pet(object):
+    COUPON = 2001
+    AUTH = 2002
+    MATERIAL_NOT_EXIST = 2003
+    MATERIAL_CONTENT_ERROR = 2004
+    MATERIAL_H5_ERROR = 2005
+    CSV_FORMAT_ERROR = 2006
+    ID_NOT_EXIST = 2007
+    MAX_LENGTH = 2008
+    ID_REQUIRED = 2009
+    SID_REQUIRED = 2009
+    COMMENT_NOT_EXIST = 2010
+
+
+class Pay(object):
+    TRADE_TYPE = 3001
+    PRODUCT_NOT_EXIST = 3002
+    ORDER_ERROR = 3003
+    OPENID = 3004
+    ORDER_NOT_EXIST = 3005
+    INVALID_RECEIPT = 3006
+    RECEIPT = 3007
+    ENV = 3008
+    ERROR = 3009
+
+
+class Report(object):
+    START_REQUIRED = 5001
+    END_REQUIRED = 5002
+    NO_DATA = 5003
+    END_LT_START = 5004
+    DATE_RANGE = 5005
+    VIDEO_ID = 5006
+
+
+class Passport(object):
+    UNCOMPLETED = 6001
+    EXCHANGED = 6002
+    NO_PERMISSION = 6003
+    EXPIRED = 6004
+    WISH_MAX_LENGTH = 6005
+    WISH_MIN_LENGTH = 6006
+    SYS_COUPON_NOT_EXISTS = 6007
+    QUESTION_COUNT_ERROR = 6008
+    ANSWER_ERROR = 6009
+    ANSWERED_ERROR = 6010
+    COUPON_RECEIVED = 6011
+    COUPON_CATEGORY = 6012
+
+
+def main():
+    pass
+
+
+if __name__ == '__main__':
+    main()

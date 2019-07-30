@@ -5173,3 +5173,507 @@ core.models.User.DoesNotExist: User matching query does not exist.
 2019-07-30 17:00:53,019 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
 2019-07-30 17:00:53,021 DEBUG (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:00:53.003241' AND `django_session`.`session_key` = 'l03zo0nkxcud05jwk9kzybyy21jlbbp6'); args=('2019-07-30 17:00:53.003241', 'l03zo0nkxcud05jwk9kzybyy21jlbbp6')
 2019-07-30 17:00:53,026 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 17:08:14,670 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:08:14,671 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:08:14,675 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:08:14,678 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:08:41,450 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:08:41,451 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:08:41,455 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:08:41,460 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:08:55,135 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:08:55,139 DEBUG (0.004) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:08:55,145 DEBUG (0.005) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:08:55.124542' AND `django_session`.`session_key` = 'l03zo0nkxcud05jwk9kzybyy21jlbbp6'); args=('2019-07-30 17:08:55.124542', 'l03zo0nkxcud05jwk9kzybyy21jlbbp6')
+2019-07-30 17:09:38,099 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:09:38,100 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:09:38,103 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:09:38,107 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:09:47,862 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:09:47,863 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:09:47,867 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:09:47,870 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:11:48,505 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:11:48,506 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:11:48,507 DEBUG (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:11:48.496897' AND `django_session`.`session_key` = 'l03zo0nkxcud05jwk9kzybyy21jlbbp6'); args=('2019-07-30 17:11:48.496897', 'l03zo0nkxcud05jwk9kzybyy21jlbbp6')
+2019-07-30 17:11:55,046 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:11:55,047 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:11:55,049 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:11:55.039154' AND `django_session`.`session_key` = 'l03zo0nkxcud05jwk9kzybyy21jlbbp6'); args=('2019-07-30 17:11:55.039154', 'l03zo0nkxcud05jwk9kzybyy21jlbbp6')
+2019-07-30 17:12:16,413 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:12:16,414 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:12:16,418 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:12:16,422 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:12:18,757 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:12:18,758 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:12:18,765 DEBUG (0.007) SHOW FULL TABLES; args=None
+2019-07-30 17:12:18,769 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:12:19,111 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:12:19,113 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:12:19,115 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:12:19.101335' AND `django_session`.`session_key` = 'l03zo0nkxcud05jwk9kzybyy21jlbbp6'); args=('2019-07-30 17:12:19.101335', 'l03zo0nkxcud05jwk9kzybyy21jlbbp6')
+2019-07-30 17:12:19,119 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 17:13:14,507 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:13:14,509 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:13:14,511 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:13:14,521 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:13:26,228 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:13:26,229 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:13:26,233 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:13:26,236 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:13:32,371 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:13:32,372 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:13:32,374 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:13:32.362463' AND `django_session`.`session_key` = 'l03zo0nkxcud05jwk9kzybyy21jlbbp6'); args=('2019-07-30 17:13:32.362463', 'l03zo0nkxcud05jwk9kzybyy21jlbbp6')
+2019-07-30 17:13:32,378 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 17:13:35,779 DEBUG (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:13:35,780 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:13:35,782 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:13:35.768500' AND `django_session`.`session_key` = 'l03zo0nkxcud05jwk9kzybyy21jlbbp6'); args=('2019-07-30 17:13:35.768500', 'l03zo0nkxcud05jwk9kzybyy21jlbbp6')
+2019-07-30 17:13:35,785 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 17:13:35,789 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE `django_session`.`session_key` = 'l03zo0nkxcud05jwk9kzybyy21jlbbp6'; args=('l03zo0nkxcud05jwk9kzybyy21jlbbp6',)
+2019-07-30 17:13:35,791 DEBUG (0.001) DELETE FROM `django_session` WHERE `django_session`.`session_key` IN ('l03zo0nkxcud05jwk9kzybyy21jlbbp6'); args=('l03zo0nkxcud05jwk9kzybyy21jlbbp6',)
+2019-07-30 17:13:48,150 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:13:48,151 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:13:48,153 DEBUG (0.002) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:13:48,155 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:14:27,143 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:14:27,144 DEBUG (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:14:27,148 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:14:27,152 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:14:35,836 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:14:35,837 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:14:35,841 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:14:35,846 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:14:39,412 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:14:39,419 DEBUG (0.007) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:14:39,427 DEBUG (0.007) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:14:39,434 DEBUG (0.006) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:16:57,914 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:16:57,915 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:16:57,918 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:16:57,922 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:17:03,858 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:17:03,861 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:17:03,865 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:17:03,872 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:17:06,591 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:17:06,594 DEBUG (0.003) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:17:06,599 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:17:19,762 DEBUG (0.002) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:17:19,778 DEBUG (0.008) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:17:19,822 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:17:37,733 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:17:37,735 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:17:37,739 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:17:37,745 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:17:43,519 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:17:43,520 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:17:43,524 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:17:43,530 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:17:52,496 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:17:52,500 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:17:52,505 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-30 17:17:52,511 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:17:53,034 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:17:53,036 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:17:53,038 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:17:55,733 DEBUG (0.006) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:17:55,741 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:17:55,758 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:17:56,543 DEBUG (0.003) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:23:57,824 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:23:57,832 DEBUG (0.006) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:24:04,848 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:24:59,980 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:24:59,981 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:24:59,984 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:24:59,987 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:25:04,567 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:25:04,568 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:25:04,570 DEBUG (0.001) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:25:04,572 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:25:04,585 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:26:11,077 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:26:11,078 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:26:11,080 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:26:11,084 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:26:20,857 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:26:20,858 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:26:20,862 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:26:20,866 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:26:46,286 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:26:46,288 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:26:46,291 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:26:46,298 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:26:47,109 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:26:47,111 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:26:47,114 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:27:04,299 DEBUG (0.003) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:27:04,310 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:27:04,328 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:27:12,611 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:27:19,856 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:27:22,008 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:28:20,961 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:28:20,963 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:28:20,969 DEBUG (0.005) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE (`core_user`.`username` = 'admin' OR `core_user`.`email` = 'admin'); args=('admin', 'admin')
+2019-07-30 17:28:21,086 DEBUG (0.002) SELECT (1) AS `a` FROM `django_session` WHERE `django_session`.`session_key` = 'ym510044otmoa9534ubf70o19h5a64wl'  LIMIT 1; args=('ym510044otmoa9534ubf70o19h5a64wl',)
+2019-07-30 17:28:21,094 DEBUG (0.004) INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES ('ym510044otmoa9534ubf70o19h5a64wl', 'ZmZmZjBhYmNmYzI5ZGMyMjgzY2YzNzZhNDdmYWE3MzYwODJiOGRiMDp7fQ==', '2019-08-13 17:28:21.087221'); args=('ym510044otmoa9534ubf70o19h5a64wl', 'ZmZmZjBhYmNmYzI5ZGMyMjgzY2YzNzZhNDdmYWE3MzYwODJiOGRiMDp7fQ==', '2019-08-13 17:28:21.087221')
+2019-07-30 17:28:21,174 DEBUG (0.002) UPDATE `core_user` SET `last_login` = '2019-07-30 17:28:21.166756' WHERE `core_user`.`id` = 1; args=('2019-07-30 17:28:21.166756', 1)
+2019-07-30 17:28:21,192 DEBUG (0.002) UPDATE `django_session` SET `session_data` = 'NTJiZTcxZGRiOTA1NWQ2MTY0Yjc3MjMzNTc5YjNhNTkzOThhZTVlMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiY29yZS52aWV3cy5DdXN0b21CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMjZhZDdjZTRlZDczODc5ZjE2ZTVhMGQxMTU2Njk4ZDgzMjNlYTA1YyJ9', `expire_date` = '2019-08-13 17:28:21.188172' WHERE `django_session`.`session_key` = 'ym510044otmoa9534ubf70o19h5a64wl'; args=('NTJiZTcxZGRiOTA1NWQ2MTY0Yjc3MjMzNTc5YjNhNTkzOThhZTVlMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiY29yZS52aWV3cy5DdXN0b21CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMjZhZDdjZTRlZDczODc5ZjE2ZTVhMGQxMTU2Njk4ZDgzMjNlYTA1YyJ9', '2019-08-13 17:28:21.188172', 'ym510044otmoa9534ubf70o19h5a64wl')
+2019-07-30 17:28:21,232 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:28:21,234 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:28:21,238 DEBUG (0.003) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:28:21.221084' AND `django_session`.`session_key` = 'ym510044otmoa9534ubf70o19h5a64wl'); args=('2019-07-30 17:28:21.221084', 'ym510044otmoa9534ubf70o19h5a64wl')
+2019-07-30 17:28:21,247 DEBUG (0.005) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 17:28:21,256 DEBUG (0.001) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:28:21,266 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level`, T2.`id`, T2.`name`, T2.`parent_id`, T2.`lft`, T2.`rght`, T2.`tree_id`, T2.`level` FROM `core_pagejson` LEFT OUTER JOIN `core_pagejson` T2 ON (`core_pagejson`.`parent_id` = T2.`id`) ORDER BY `core_pagejson`.`id` ASC, `core_pagejson`.`level` ASC; args=()
+2019-07-30 17:28:21,362 DEBUG (0.002) SELECT `xadmin_usersettings`.`id`, `xadmin_usersettings`.`user_id`, `xadmin_usersettings`.`key`, `xadmin_usersettings`.`value` FROM `xadmin_usersettings` WHERE (`xadmin_usersettings`.`key` = 'site-theme' AND `xadmin_usersettings`.`user_id` = 1); args=('site-theme', 1)
+2019-07-30 17:28:21,369 DEBUG (0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'core' AND `django_content_type`.`model` = 'pagejson'); args=('core', 'pagejson')
+2019-07-30 17:28:21,378 DEBUG (0.003) SELECT `xadmin_bookmark`.`id`, `xadmin_bookmark`.`title`, `xadmin_bookmark`.`user_id`, `xadmin_bookmark`.`url_name`, `xadmin_bookmark`.`content_type_id`, `xadmin_bookmark`.`query`, `xadmin_bookmark`.`is_share` FROM `xadmin_bookmark` WHERE (`xadmin_bookmark`.`content_type_id` = 9 AND `xadmin_bookmark`.`url_name` = 'xadmin:core_pagejson_changelist' AND (`xadmin_bookmark`.`user_id` = 1 OR `xadmin_bookmark`.`is_share` = 1)); args=(9, 'xadmin:core_pagejson_changelist', 1, True)
+2019-07-30 17:28:21,396 DEBUG (0.002) SELECT `xadmin_usersettings`.`id`, `xadmin_usersettings`.`user_id`, `xadmin_usersettings`.`key`, `xadmin_usersettings`.`value` FROM `xadmin_usersettings` WHERE (`xadmin_usersettings`.`key` = 'site-theme' AND `xadmin_usersettings`.`user_id` = 1); args=('site-theme', 1)
+2019-07-30 17:28:21,407 DEBUG (0.003) SELECT `xadmin_bookmark`.`id`, `xadmin_bookmark`.`title`, `xadmin_bookmark`.`user_id`, `xadmin_bookmark`.`url_name`, `xadmin_bookmark`.`content_type_id`, `xadmin_bookmark`.`query`, `xadmin_bookmark`.`is_share` FROM `xadmin_bookmark` WHERE (`xadmin_bookmark`.`content_type_id` = 9 AND `xadmin_bookmark`.`url_name` = 'xadmin:core_pagejson_changelist' AND (`xadmin_bookmark`.`user_id` = 1 OR `xadmin_bookmark`.`is_share` = 1)); args=(9, 'xadmin:core_pagejson_changelist', 1, True)
+2019-07-30 17:28:21,426 DEBUG (0.005) SELECT `xadmin_usersettings`.`id`, `xadmin_usersettings`.`user_id`, `xadmin_usersettings`.`key`, `xadmin_usersettings`.`value` FROM `xadmin_usersettings` WHERE (`xadmin_usersettings`.`key` = 'site-theme' AND `xadmin_usersettings`.`user_id` = 1); args=('site-theme', 1)
+2019-07-30 17:28:21,436 DEBUG (0.003) SELECT `xadmin_bookmark`.`id`, `xadmin_bookmark`.`title`, `xadmin_bookmark`.`user_id`, `xadmin_bookmark`.`url_name`, `xadmin_bookmark`.`content_type_id`, `xadmin_bookmark`.`query`, `xadmin_bookmark`.`is_share` FROM `xadmin_bookmark` WHERE (`xadmin_bookmark`.`content_type_id` = 9 AND `xadmin_bookmark`.`url_name` = 'xadmin:core_pagejson_changelist' AND (`xadmin_bookmark`.`user_id` = 1 OR `xadmin_bookmark`.`is_share` = 1)); args=(9, 'xadmin:core_pagejson_changelist', 1, True)
+2019-07-30 17:28:21,442 DEBUG (0.003) SELECT `xadmin_usersettings`.`id`, `xadmin_usersettings`.`user_id`, `xadmin_usersettings`.`key`, `xadmin_usersettings`.`value` FROM `xadmin_usersettings` WHERE (`xadmin_usersettings`.`key` = 'site-theme' AND `xadmin_usersettings`.`user_id` = 1); args=('site-theme', 1)
+2019-07-30 17:28:21,451 DEBUG (0.003) SELECT `xadmin_bookmark`.`id`, `xadmin_bookmark`.`title`, `xadmin_bookmark`.`user_id`, `xadmin_bookmark`.`url_name`, `xadmin_bookmark`.`content_type_id`, `xadmin_bookmark`.`query`, `xadmin_bookmark`.`is_share` FROM `xadmin_bookmark` WHERE (`xadmin_bookmark`.`content_type_id` = 9 AND `xadmin_bookmark`.`url_name` = 'xadmin:core_pagejson_changelist' AND (`xadmin_bookmark`.`user_id` = 1 OR `xadmin_bookmark`.`is_share` = 1)); args=(9, 'xadmin:core_pagejson_changelist', 1, True)
+2019-07-30 17:28:23,725 DEBUG (0.001) UPDATE `django_session` SET `session_data` = 'NGZmMjhlZWQzNjIzMzEzYWVkYzU1OTJkYzM4ZTllMDdjMzNjYjA4YTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiY29yZS52aWV3cy5DdXN0b21CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMjZhZDdjZTRlZDczODc5ZjE2ZTVhMGQxMTU2Njk4ZDgzMjNlYTA1YyIsIkxJU1RfUVVFUlkiOltbImNvcmUiLCJwYWdlanNvbiJdLCIiXX0=', `expire_date` = '2019-08-13 17:28:23.721814' WHERE `django_session`.`session_key` = 'ym510044otmoa9534ubf70o19h5a64wl'; args=('NGZmMjhlZWQzNjIzMzEzYWVkYzU1OTJkYzM4ZTllMDdjMzNjYjA4YTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiY29yZS52aWV3cy5DdXN0b21CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMjZhZDdjZTRlZDczODc5ZjE2ZTVhMGQxMTU2Njk4ZDgzMjNlYTA1YyIsIkxJU1RfUVVFUlkiOltbImNvcmUiLCJwYWdlanNvbiJdLCIiXX0=', '2019-08-13 17:28:23.721814', 'ym510044otmoa9534ubf70o19h5a64wl')
+2019-07-30 17:28:23,873 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:28:23,875 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:28:23,878 DEBUG (0.003) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:28:23.860252' AND `django_session`.`session_key` = 'ym510044otmoa9534ubf70o19h5a64wl'); args=('2019-07-30 17:28:23.860252', 'ym510044otmoa9534ubf70o19h5a64wl')
+2019-07-30 17:28:23,889 DEBUG (0.005) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 17:29:18,427 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:29:18,430 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:29:18,438 DEBUG (0.007) SHOW FULL TABLES; args=None
+2019-07-30 17:29:18,449 DEBUG (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:29:25,317 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:29:25,319 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:29:25,322 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:29:25,328 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:29:32,214 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:29:32,215 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:29:32,217 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:29:34,730 DEBUG (0.002) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:29:34,743 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:29:34,762 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:29:36,438 DEBUG (0.007) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC; args=()
+2019-07-30 17:32:06,220 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:32:06,221 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:32:06,224 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:32:06,231 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:32:08,538 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:32:08,539 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:32:08,541 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:32:10,803 DEBUG (0.003) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:32:10,812 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:32:10,836 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:32:12,730 DEBUG (0.003) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:32:12,733 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:32:13,492 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC; args=()
+2019-07-30 17:35:26,972 DEBUG (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:35:26,988 DEBUG (0.007) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:35:26,993 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:35:27,003 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:35:53,515 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:35:53,519 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:35:53,523 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:35:53,532 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:36:29,376 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:36:29,378 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:36:29,383 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-30 17:36:29,391 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:38:51,209 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:38:51,211 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:38:51,216 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:38:51,223 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:40:53,830 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:40:53,833 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:40:53,839 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-30 17:40:53,853 DEBUG (0.006) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:41:07,761 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:41:07,763 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:41:07,766 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:41:07,771 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:41:35,315 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:41:35,316 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:41:35,319 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:41:35,326 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:42:18,362 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:42:18,364 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:42:18,367 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:42:18,374 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:42:40,533 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:42:40,535 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:42:40,539 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:42:40,545 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:42:52,468 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:42:52,470 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:42:52,473 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:42:52,480 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:42:59,239 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:42:59,240 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:42:59,242 DEBUG (0.001) SELECT COUNT(*) AS `__count` FROM `core_pagejson`; args=()
+2019-07-30 17:42:59,252 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 4; args=()
+2019-07-30 17:42:59,273 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=()
+2019-07-30 17:48:37,776 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:48:37,778 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:48:37,783 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:48:37,795 DEBUG (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:48:37,970 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:48:37,973 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:48:37,980 DEBUG (0.005) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 17:48:37.949685' AND `django_session`.`session_key` = 'ym510044otmoa9534ubf70o19h5a64wl'); args=('2019-07-30 17:48:37.949685', 'ym510044otmoa9534ubf70o19h5a64wl')
+2019-07-30 17:48:38,008 DEBUG (0.015) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 17:50:10,918 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:50:10,919 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:50:10,923 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:50:10,929 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:50:13,603 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:50:13,604 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:50:13,607 DEBUG (0.003) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=(0,)
+2019-07-30 17:50:17,835 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=(0,)
+2019-07-30 17:50:30,525 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC; args=(0,)
+2019-07-30 17:50:30,533 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 12 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(12,)
+2019-07-30 17:50:30,539 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 14 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(14,)
+2019-07-30 17:50:30,543 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 15 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(15,)
+2019-07-30 17:50:30,546 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 13 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(13,)
+2019-07-30 17:51:14,280 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:51:14,282 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:51:14,287 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 17:51:14,294 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:52:58,782 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:52:58,790 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:52:58,793 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:52:58,799 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:53:02,864 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:53:02,865 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:53:02,867 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=(0,)
+2019-07-30 17:53:03,714 DEBUG (0.009) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC; args=(0,)
+2019-07-30 17:54:27,962 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:54:27,964 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:54:27,967 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:54:27,974 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:55:02,037 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:55:02,039 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:55:02,042 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:55:02,048 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:55:34,416 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:55:34,418 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:55:34,421 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:55:34,436 DEBUG (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:55:43,831 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:55:43,832 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:55:43,835 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:55:43,841 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:55:49,584 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:55:49,585 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:55:49,589 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:55:49,595 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:55:56,322 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:55:56,324 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:55:56,327 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:55:56,333 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:56:00,923 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:56:00,925 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:56:00,929 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:56:00,935 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:56:18,044 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:56:18,046 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:56:18,052 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-30 17:56:18,065 DEBUG (0.006) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:56:36,282 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:56:36,285 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:56:36,288 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 17:56:36,294 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:56:43,712 DEBUG (0.009) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:56:43,715 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:56:43,721 DEBUG (0.006) SHOW FULL TABLES; args=None
+2019-07-30 17:56:43,738 DEBUG (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:56:54,619 DEBUG (0.004) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:56:54,622 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:56:54,625 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=(0,)
+2019-07-30 17:56:57,131 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC; args=(0,)
+2019-07-30 17:56:57,156 DEBUG (0.007) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 12 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(12,)
+2019-07-30 17:56:57,169 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 14 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(14,)
+2019-07-30 17:56:57,181 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 15 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(15,)
+2019-07-30 17:57:45,137 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:57:45,139 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:57:45,145 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=(0,)
+2019-07-30 17:57:47,260 DEBUG (0.029) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC; args=(0,)
+2019-07-30 17:58:26,404 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:58:26,406 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:58:26,411 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-30 17:58:26,424 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 17:58:29,359 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:58:29,360 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:58:29,362 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=(0,)
+2019-07-30 17:58:31,214 DEBUG (0.006) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC; args=(0,)
+2019-07-30 17:58:36,616 DEBUG (0.003) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 12 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC  LIMIT 21; args=(12,)
+2019-07-30 17:58:37,456 DEBUG (0.012) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 12 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(12,)
+2019-07-30 17:58:37,521 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 14 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC  LIMIT 21; args=(14,)
+2019-07-30 17:58:38,242 DEBUG (0.013) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 14 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(14,)
+2019-07-30 17:58:38,279 DEBUG (0.003) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 15 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC  LIMIT 21; args=(15,)
+2019-07-30 17:58:40,000 DEBUG (0.020) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 15 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(15,)
+2019-07-30 17:59:53,004 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 17:59:53,006 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 17:59:53,009 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 17:59:53,016 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:00:15,595 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:00:15,596 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:00:15,599 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:00:15,607 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:00:28,323 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:00:28,325 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:00:28,328 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:00:28,336 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:01:19,202 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:01:19,204 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:01:19,207 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:01:19,213 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:01:30,498 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:01:30,499 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:01:30,502 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 18:01:30,508 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:01:58,104 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:01:58,106 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:01:58,108 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 18:01:58,115 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:02:04,569 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:02:04,570 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:02:04,572 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC  LIMIT 21; args=(0,)
+2019-07-30 18:02:07,358 DEBUG (0.004) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC; args=(0,)
+2019-07-30 18:02:07,370 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 12 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(12,)
+2019-07-30 18:02:07,376 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 14 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(14,)
+2019-07-30 18:02:07,382 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 15 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(15,)
+2019-07-30 18:02:07,385 DEBUG (0.001) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 13 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(13,)
+2019-07-30 18:03:23,882 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:03:23,884 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:03:23,887 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:03:23,894 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:03:27,706 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:03:27,708 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:03:27,711 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:03:27,718 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:03:36,414 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:03:36,416 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:03:36,419 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 18:03:36.396311' AND `django_session`.`session_key` = 'ym510044otmoa9534ubf70o19h5a64wl'); args=('2019-07-30 18:03:36.396311', 'ym510044otmoa9534ubf70o19h5a64wl')
+2019-07-30 18:03:36,430 DEBUG (0.005) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 18:03:49,222 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:03:49,223 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:03:49,227 DEBUG (0.003) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`level` = 0 ORDER BY `core_pagejson`.`id` ASC; args=(0,)
+2019-07-30 18:03:49,248 DEBUG (0.005) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 12 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(12,)
+2019-07-30 18:03:49,258 DEBUG (0.003) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 14 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(14,)
+2019-07-30 18:03:49,267 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 15 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(15,)
+2019-07-30 18:03:49,273 DEBUG (0.002) SELECT `core_pagejson`.`id`, `core_pagejson`.`name`, `core_pagejson`.`parent_id`, `core_pagejson`.`lft`, `core_pagejson`.`rght`, `core_pagejson`.`tree_id`, `core_pagejson`.`level` FROM `core_pagejson` WHERE `core_pagejson`.`parent_id` = 13 ORDER BY `core_pagejson`.`tree_id` ASC, `core_pagejson`.`lft` ASC; args=(13,)
+2019-07-30 18:08:12,538 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:08:12,540 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:08:12,543 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:08:12,550 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:08:15,303 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:08:15,305 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:08:15,308 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 18:08:15.284658' AND `django_session`.`session_key` = 'ym510044otmoa9534ubf70o19h5a64wl'); args=('2019-07-30 18:08:15.284658', 'ym510044otmoa9534ubf70o19h5a64wl')
+2019-07-30 18:08:15,319 DEBUG (0.005) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 18:12:08,767 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:12:08,771 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:12:08,775 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 18:12:08,785 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:27:42,743 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:27:42,744 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:27:42,747 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:27:42,758 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:27:53,985 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:27:53,987 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:27:53,992 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-30 18:27:53,997 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:28:32,324 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:28:32,325 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:28:32,344 DEBUG (0.018) SHOW FULL TABLES; args=None
+2019-07-30 18:28:32,353 DEBUG (0.005) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:28:36,582 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:28:36,584 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:28:36,593 DEBUG (0.008) SHOW FULL TABLES; args=None
+2019-07-30 18:28:36,597 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:28:50,356 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:28:50,358 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:28:50,363 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 18:28:50,367 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:28:55,794 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:28:55,796 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:28:55,803 DEBUG (0.006) SHOW FULL TABLES; args=None
+2019-07-30 18:28:55,809 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:29:07,507 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:29:07,510 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:29:07,520 DEBUG (0.007) SHOW FULL TABLES; args=None
+2019-07-30 18:29:07,525 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:29:35,475 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:29:35,476 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:29:35,480 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 18:29:35,486 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:30:40,572 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:30:40,574 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:30:40,578 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 18:30:40,582 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:30:53,068 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:30:53,070 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:30:53,074 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:30:53,079 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:41:15,853 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:41:15,855 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:41:15,872 DEBUG (0.017) SHOW FULL TABLES; args=None
+2019-07-30 18:41:15,884 DEBUG (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:41:28,404 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:41:28,406 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:41:28,417 DEBUG (0.011) SHOW FULL TABLES; args=None
+2019-07-30 18:41:28,423 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:42:24,395 DEBUG (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:42:24,396 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:42:24,406 DEBUG (0.009) SHOW FULL TABLES; args=None
+2019-07-30 18:42:24,409 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:42:50,234 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:42:50,235 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:42:50,247 DEBUG (0.012) SHOW FULL TABLES; args=None
+2019-07-30 18:42:50,254 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:43:57,019 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:43:57,020 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:43:57,037 DEBUG (0.017) SHOW FULL TABLES; args=None
+2019-07-30 18:43:57,042 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:44:10,407 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:44:10,409 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:44:10,416 DEBUG (0.007) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE (`core_user`.`username` = 'admin' OR `core_user`.`email` = 'admin'); args=('admin', 'admin')
+2019-07-30 18:44:10,527 DEBUG (0.003) SELECT (1) AS `a` FROM `django_session` WHERE `django_session`.`session_key` = 'i0lggwo45s8cwrjzeltbbicm01d0glae'  LIMIT 1; args=('i0lggwo45s8cwrjzeltbbicm01d0glae',)
+2019-07-30 18:44:10,537 DEBUG (0.007) INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES ('i0lggwo45s8cwrjzeltbbicm01d0glae', 'ZmZmZjBhYmNmYzI5ZGMyMjgzY2YzNzZhNDdmYWE3MzYwODJiOGRiMDp7fQ==', '2019-08-13 18:44:10.528107'); args=('i0lggwo45s8cwrjzeltbbicm01d0glae', 'ZmZmZjBhYmNmYzI5ZGMyMjgzY2YzNzZhNDdmYWE3MzYwODJiOGRiMDp7fQ==', '2019-08-13 18:44:10.528107')
+2019-07-30 18:44:10,571 DEBUG (0.003) UPDATE `core_user` SET `last_login` = '2019-07-30 18:44:10.567013' WHERE `core_user`.`id` = 1; args=('2019-07-30 18:44:10.567013', 1)
+2019-07-30 18:44:10,584 DEBUG (0.004) UPDATE `django_session` SET `session_data` = 'NTJiZTcxZGRiOTA1NWQ2MTY0Yjc3MjMzNTc5YjNhNTkzOThhZTVlMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiY29yZS52aWV3cy5DdXN0b21CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMjZhZDdjZTRlZDczODc5ZjE2ZTVhMGQxMTU2Njk4ZDgzMjNlYTA1YyJ9', `expire_date` = '2019-08-13 18:44:10.578832' WHERE `django_session`.`session_key` = 'i0lggwo45s8cwrjzeltbbicm01d0glae'; args=('NTJiZTcxZGRiOTA1NWQ2MTY0Yjc3MjMzNTc5YjNhNTkzOThhZTVlMzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiY29yZS52aWV3cy5DdXN0b21CYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMjZhZDdjZTRlZDczODc5ZjE2ZTVhMGQxMTU2Njk4ZDgzMjNlYTA1YyJ9', '2019-08-13 18:44:10.578832', 'i0lggwo45s8cwrjzeltbbicm01d0glae')
+2019-07-30 18:44:10,607 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:44:10,608 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:44:10,611 DEBUG (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-07-30 18:44:10.598034' AND `django_session`.`session_key` = 'i0lggwo45s8cwrjzeltbbicm01d0glae'); args=('2019-07-30 18:44:10.598034', 'i0lggwo45s8cwrjzeltbbicm01d0glae')
+2019-07-30 18:44:10,613 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE `core_user`.`id` = 1; args=(1,)
+2019-07-30 18:44:42,970 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:44:42,971 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:44:42,973 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:44:42,973 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:44:42,978 DEBUG (0.004) SHOW FULL TABLES; args=None
+2019-07-30 18:44:42,983 DEBUG (0.009) SHOW FULL TABLES; args=None
+2019-07-30 18:44:42,989 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:44:42,993 DEBUG (0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:44:55,506 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:44:55,508 DEBUG (0.002) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:44:55,511 DEBUG (0.002) SELECT `core_user`.`id`, `core_user`.`password`, `core_user`.`last_login`, `core_user`.`is_superuser`, `core_user`.`username`, `core_user`.`first_name`, `core_user`.`last_name`, `core_user`.`email`, `core_user`.`is_staff`, `core_user`.`is_active`, `core_user`.`date_joined`, `core_user`.`nick_name`, `core_user`.`birthday`, `core_user`.`gender`, `core_user`.`address`, `core_user`.`moblile`, `core_user`.`image` FROM `core_user` WHERE (`core_user`.`username` = 'admin' OR `core_user`.`email` = 'admin'); args=('admin', 'admin')
+2019-07-30 18:45:51,162 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:45:51,164 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:45:51,169 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-30 18:45:51,173 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:47:05,603 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:47:05,604 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:47:05,607 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:47:05,613 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:47:33,025 DEBUG (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:47:33,027 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:47:33,032 DEBUG (0.005) SHOW FULL TABLES; args=None
+2019-07-30 18:47:33,040 DEBUG (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:48:01,496 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:48:01,497 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:48:01,500 DEBUG (0.003) SHOW FULL TABLES; args=None
+2019-07-30 18:48:01,505 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:48:46,510 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:48:46,511 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:48:46,513 DEBUG (0.002) SHOW FULL TABLES; args=None
+2019-07-30 18:48:46,517 DEBUG (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2019-07-30 18:48:59,280 DEBUG (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2019-07-30 18:48:59,281 DEBUG (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+2019-07-30 18:48:59,288 DEBUG (0.006) SHOW FULL TABLES; args=None
+2019-07-30 18:48:59,292 DEBUG (0.002) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

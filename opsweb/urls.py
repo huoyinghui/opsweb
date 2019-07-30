@@ -14,34 +14,38 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 import xadmin
-# from apps.account.router import account_router
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-# from django.views.generic import TemplateView
 from rest_framework.routers import DefaultRouter
 # swagger pakeage
 from rest_framework.schemas import get_schema_view
 from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPIRenderer
 
 from core.views import CoreObtainJSONWebToken
-from core.router import core_router
+# from core.router import core_router
 
 
 schema_view = get_schema_view(title='Web API', renderer_classes=[OpenAPIRenderer, SwaggerUIRenderer])
 router = DefaultRouter()
-router.registry.extend(core_router.registry)
 
 urlpatterns = [
     path(r'api/', include(router.urls)),
     # path('', TemplateView.as_view(template_name="index.html"), name="index"),
     path('docs/', schema_view),  # swagger doc
-    path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # swagger login
     path('api-token-auth/', CoreObtainJSONWebToken.as_view()),
 ]
+
+
+
+# urlpatterns = [
+#     url(r'^admin/', admin.site.urls),
+#     url(r'^api/', include('core.urls')),
+#     url(r'^docs/', include('rest_framework_swagger.urls')),
+# ]
 
 
 if settings.DEBUG:

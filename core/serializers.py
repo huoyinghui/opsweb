@@ -2,18 +2,23 @@
 # -*- coding: utf-8 -*-
 
 """
-Author: 
+Author:
 Email:
 
-date: 
+date:
 desc:
 
 """
-
+import logging
+from rest_framework import serializers
+from opsweb.serializers import BaseAuthSerializer
 from .models import Boss, User, PageJson
 
 from rest_framework.serializers import ModelSerializer
 from mptt.templatetags.mptt_tags import cache_tree_children
+
+
+logger = logging.getLogger('debug')
 
 
 class BossSerializers(ModelSerializer):
@@ -36,6 +41,24 @@ class UserSerializers(ModelSerializer):
         fields = ['id', 'nick_name', 'birthday', 'moblile']
 
 
+class LoginSerializer(BaseAuthSerializer):
+    username = serializers.CharField(required=True, max_length=30, write_only=True, help_text=u'用户名')
+    password = serializers.CharField(required=True, write_only=True, help_text=u'密码')
+
+    def validate(self, attrs):
+        logger.debug(attrs)
+        return attrs
+
+    def to_representation(self, data=None):
+        ret = super(LoginSerializer, self).to_representation(data)
+        ret['token'] = data['token']
+        ret['id'] = data['user'].get_uid
+        ret['errcode'] = 0
+        ret['errmsg'] = 'ok'
+        logger.debug('LoginSerializer to_representation ok')
+        return ret
+
+
 class PageJsonSerializers(ModelSerializer):
     """
     PageJson序列化类
@@ -44,6 +67,18 @@ class PageJsonSerializers(ModelSerializer):
     class Meta:
         model = PageJson
         fields = ['id', 'name', 'level', 'parent_id']
+
+
+class RecursiveField(ModelSerializer):
+    # 这个类代码保持不变
+    def to_representation(self, value):
+        serializer = self.parent.parent.__class__(value, context=self.context)
+        return serializer.data
+
+
+class PageJsoTreeSerializer(PageJsonSerializers):
+    # replies 是自引用的外键字段
+    replies = RecursiveField(many=True)
 
 
 def recursive_node_to_dict(node):
@@ -63,12 +98,13 @@ def recursive_node_to_dict(node):
     return result
 
 
-def get_page_json_tree():
+def get_page_json_tree(queryset=None):
     """
 
+    :param queryset:
     :return:
     """
-    root_nodes = cache_tree_children(PageJson.objects.all())
+    root_nodes = cache_tree_children(queryset)
     nodes = []
     for n in root_nodes:
         nodes.append(recursive_node_to_dict(n))

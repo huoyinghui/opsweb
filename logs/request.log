@@ -387,3 +387,188 @@ django.db.utils.ProgrammingError: (1146, "Table 'opsweb.xadmin_usersettings' doe
 2019-07-30 16:35:27 [django.request:228] [WARNING] - Not Found: /favicon.ico
 2019-07-30 16:52:42 [django.request:228] [WARNING] - Not Found: /admin/core/pagejson/
 2019-07-30 17:00:38 [django.request:228] [WARNING] - Not Found: /xamdin
+2019-07-30 17:08:55 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/schemas/views.py", line 31, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 286, in get_schema
+    links = self.get_links(None if public else request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 322, in get_links
+    if not self.has_view_permissions(path, method, view):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 397, in has_view_permissions
+    view.check_permissions(view.request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 322, in check_permissions
+    if not permission.has_permission(request, self):
+AttributeError: 'CustomAuth' object has no attribute 'has_permission'
+2019-07-30 17:11:48 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'core.views' has no attribute 'CustomBackend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 471, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 388, in initial
+    self.perform_authentication(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 314, in perform_authentication
+    request.user
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/request.py", line 222, in user
+    self._authenticate()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/request.py", line 375, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/authentication.py", line 127, in authenticate
+    if not user or not user.is_active:
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 188, in get_user
+    backend = load_backend(backend_path)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/utils/module_loading.py", line 24, in import_string
+    ) from err
+ImportError: Module "core.views" does not define a "CustomBackend" attribute/class
+2019-07-30 17:11:55 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'core.views' has no attribute 'CustomBackend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 471, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 388, in initial
+    self.perform_authentication(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 314, in perform_authentication
+    request.user
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/request.py", line 222, in user
+    self._authenticate()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/request.py", line 375, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/authentication.py", line 127, in authenticate
+    if not user or not user.is_active:
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/utils/functional.py", line 213, in inner
+    self._setup()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/utils/functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 188, in get_user
+    backend = load_backend(backend_path)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 21, in load_backend
+    return import_string(path)()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/utils/module_loading.py", line 24, in import_string
+    ) from err
+ImportError: Module "core.views" does not define a "CustomBackend" attribute/class
+2019-07-30 17:12:29 [django.request:228] [WARNING] - Unauthorized: /api/core/user/
+2019-07-30 17:25:04 [django.request:228] [ERROR] - Internal Server Error: /api/core/tree/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/huoyinghui/github/docker_nginx/opsweb/core/views.py", line 84, in list
+    page = get_page_json_tree(page)
+TypeError: get_page_json_tree() takes 0 positional arguments but 1 was given
+2019-07-30 18:42:55 [django.request:228] [WARNING] - Not Found: /
+2019-07-30 18:42:55 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 18:43:00 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'rest_framework'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework_swagger/renderers.py", line 54, in render
+    self.set_context(data, renderer_context)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework_swagger/renderers.py", line 64, in set_context
+    renderer_context.update(self.get_auth_urls())
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework_swagger/renderers.py", line 76, in get_auth_urls
+    urls['LOGIN_URL'] = resolve_url(settings.LOGIN_URL)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered namespace
+2019-07-30 18:43:59 [django.request:228] [WARNING] - Forbidden: /docs/
+2019-07-30 18:44:22 [django.request:228] [WARNING] - Forbidden: /api-token-auth/

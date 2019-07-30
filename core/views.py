@@ -1,9 +1,22 @@
+from django.contrib import auth
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
-from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from calendar import timegm
+from django.utils.translation import ugettext_lazy as _
+from mptt.templatetags.mptt_tags import cache_tree_children
+from datetime import datetime
+from rest_framework import generics
+from rest_framework.permissions import IsAdminUser, IsAuthenticated, AllowAny
+from rest_framework.response import Response
+from rest_framework.views import APIView
 from rest_framework_jwt.views import ObtainJSONWebToken, RefreshJSONWebToken, VerifyJSONWebToken
+from rest_framework_jwt.settings import api_settings
+
+from core import serializers
+from opsweb import errors
+from opsweb.exceptions import MyException
 from .models import User, PageJson
-from .serializers import UserSerializers, PageJsonSerializers
+from .serializers import UserSerializers, PageJsonSerializers, PageJsoTreeSerializer, get_page_json_tree
 from .baseviews import BaseViewSet
 
 
@@ -14,7 +27,7 @@ logger = logging.getLogger('core')
 
 
 class CoreObtainJSONWebToken(ObtainJSONWebToken):
-    permission_classes = [IsAdminUser]
+    permission_classes = [AllowAny]
 
 
 class CoreRefreshJSONWebToken(RefreshJSONWebToken):
@@ -72,6 +85,82 @@ class PageJsonSet(BaseViewSet):
     """
     queryset = PageJson.objects.all().order_by('id')
     serializer_class = PageJsonSerializers
-    permission_classes = [IsAdminUser]
+    permission_classes = [AllowAny]
     search_fields = ['level']
 
+
+class PageJsonTreeSet(PageJsonSet):
+    """
+
+    """
+    page_query_param = 'page'
+
+    def serialize_tree(self, queryset):
+        for obj in queryset:
+            data = self.get_serializer(obj).data
+            data['children'] = self.serialize_tree(obj.children.all())
+            yield data
+
+    def list(self, request):
+        return self.get(request)
+
+    def get(self, request):
+        """
+        This text is the description for this API
+        ---
+        param1 -- A first parameter
+        param2 -- A second parameter
+        """
+        queryset = self.get_queryset().filter(level=0)
+        data = self.serialize_tree(queryset)
+        return Response(data)
+
+    def retrieve(self, request, pk=None):
+        self.object = self.get_object()
+        data = self.serialize_tree([self.object])
+        return Response(data)
+
+
+class LoginView(generics.GenericAPIView):
+    permission_classes = ()
+    authentication_classes = ()
+    serializer_class = serializers.LoginSerializer
+
+    def post(self, request, *args, **kwargs):
+        """
+        用户名密码登录
+
+        ---
+        serializer: serializers.LoginSerializer
+
+        """
+        logger.debug('LoginView request data:%s', request.data)
+        serializer = serializers.LoginSerializer(data=request.data)
+        if serializer.is_valid():
+            username = serializer.validated_data['username']
+            password = serializer.validated_data['password']
+            user = auth.authenticate(username=username, password=password)
+
+            if user is not None and user.is_active:
+                auth.login(request, user)
+                # tasks.user_init.delay(user.id)
+            else:
+                raise MyException(_('username or password is error'), errors.Account.USERNAME_OR_PASSWORD)
+
+            jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+            jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+            payload = jwt_payload_handler(user)
+            # Include original issued at time for a brand new token,
+            # to allow token refresh
+            if api_settings.JWT_ALLOW_REFRESH:
+                payload['orig_iat'] = timegm(
+                    datetime.utcnow().utctimetuple()
+                )
+            token = jwt_encode_handler(payload)
+            logger.debug('LoginView login ok')
+            serializer = serializers.LoginSerializer(
+                {'token': token, 'user': user}, context={'request': request})
+
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        logger.debug('LoginView LoginSerializer invalid')
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

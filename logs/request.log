@@ -373,3 +373,17 @@ Traceback (most recent call last):
   File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
     raise errorclass(errno, errval)
 django.db.utils.ProgrammingError: (1146, "Table 'opsweb.xadmin_usersettings' doesn't exist")
+2019-07-30 14:20:14 [django.request:228] [WARNING] - Not Found: /
+2019-07-30 14:20:14 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 14:21:27 [django.request:228] [WARNING] - Unauthorized: /api/core/user/
+2019-07-30 14:21:56 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 15:15:08 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 15:27:07 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 16:02:44 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 16:05:18 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 16:26:46 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 16:34:00 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 16:34:54 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 16:35:27 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-30 16:52:42 [django.request:228] [WARNING] - Not Found: /admin/core/pagejson/
+2019-07-30 17:00:38 [django.request:228] [WARNING] - Not Found: /xamdin

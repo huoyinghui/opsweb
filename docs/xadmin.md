@@ -1,11 +1,12 @@
 ### xadmin
 
 [参考](https://blog.csdn.net/weixin_34194551/article/details/88065632)
-
+[install](https://github.com/sshwsfc/xadmin)
 
 
 ```
 pipenv install https://codeload.github.com/sshwsfc/xadmin/zip/django2
+pip install git+git://github.com/sshwsfc/xadmin.git@django2
 ```
 
 settings.py

@@ -62,11 +62,18 @@ class Boss(models.Model):
         #     ("view_user", "cat view user"),
         # )
 
+    def __str__(self):
+        return "{}".format(self.boss_name)
+
 
 # pageJson: 使用树模型
 class PageJson(MPTTModel):
     name = models.CharField(max_length=50, unique=True)
     parent = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
 
-    class MPTTMeta:
-        order_insertion_by = ['name']
+    class Meta:
+        verbose_name = u'科室'
+        verbose_name_plural = verbose_name
+        
+    def __str__(self):
+        return "{}".format(self.id)

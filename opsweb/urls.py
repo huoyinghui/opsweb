@@ -32,15 +32,16 @@ schema_view = get_schema_view(title='Web API', renderer_classes=[OpenAPIRenderer
 router = DefaultRouter()
 router.register(r'tree', core_views.PageJsonTreeSet)
 router.register(r'music', music_views.MusicViewSet)
+router.register(r'share', music_views.ShareViewSet)
 
 urlpatterns = [
-    path(r'api/', include(router.urls)),
     # path('', TemplateView.as_view(template_name="index.html"), name="index"),
-    path('docs/', schema_view),  # swagger doc
-    path('admin/', admin.site.urls),
-    path('xadmin/', xadmin.site.urls),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # swagger login
-    path('api-token-auth/', CoreObtainJSONWebToken.as_view()),
+    # path('admin/', admin.site.urls),
+    # path('xadmin/', xadmin.site.urls),
+    # path(r'docs/', schema_view),  # swagger doc
+    path(r'api/', include(router.urls)),
+    path(r'api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # swagger login
+    # path('api-token-auth/', CoreObtainJSONWebToken.as_view()),
 ]
 
 

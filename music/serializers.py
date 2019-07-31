@@ -11,7 +11,7 @@ desc:
 """
 from django.utils.timezone import now
 from rest_framework import serializers
-from .models import Music
+from .models import Music, Share
 
 
 class ToUpperCaseCharField(serializers.CharField):
@@ -33,6 +33,12 @@ class MusicSerializer(serializers.ModelSerializer):
     @staticmethod
     def get_days_since_created(obj):
         return (now() - obj.created).days
+
+
+class ShareSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Share
+        fields = '__all__'
 
 
 def main():

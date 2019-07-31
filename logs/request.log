@@ -574,3 +574,50 @@ django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered name
 2019-07-30 18:44:22 [django.request:228] [WARNING] - Forbidden: /api-token-auth/
 2019-07-31 15:22:35 [django.request:228] [WARNING] - Not Found: /
 2019-07-31 15:22:35 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-31 16:06:17 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/base.py", line 75, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'rest_framework'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 154, in _get_response
+    response = response.render()
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework_swagger/renderers.py", line 54, in render
+    self.set_context(data, renderer_context)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework_swagger/renderers.py", line 64, in set_context
+    renderer_context.update(self.get_auth_urls())
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework_swagger/renderers.py", line 76, in get_auth_urls
+    urls['LOGIN_URL'] = resolve_url(settings.LOGIN_URL)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/shortcuts.py", line 148, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/urls/base.py", line 86, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered namespace
+2019-07-31 16:11:14 [django.request:228] [WARNING] - Not Found: /docs/
+2019-07-31 16:11:16 [django.request:228] [WARNING] - Not Found: /docs/
+2019-07-31 16:11:21 [django.request:228] [WARNING] - Not Found: /
+2019-07-31 16:14:33 [django.request:228] [WARNING] - Unauthorized: /api/music/
+2019-07-31 16:14:33 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-31 16:15:19 [django.request:228] [WARNING] - Unauthorized: /api/music/
+2019-07-31 16:15:19 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-31 16:15:36 [django.request:228] [WARNING] - Not Found: /api/music.
+2019-07-31 16:16:22 [django.request:228] [WARNING] - Unauthorized: /api/music/
+2019-07-31 16:17:40 [django.request:228] [WARNING] - Unauthorized: /api/music/
+2019-07-31 16:27:10 [django.request:228] [WARNING] - Unauthorized: /api/share/
+2019-07-31 16:27:13 [django.request:228] [WARNING] - Unauthorized: /api/share/
+2019-07-31 16:27:15 [django.request:228] [WARNING] - Unauthorized: /api/share/
+2019-07-31 16:28:47 [django.request:228] [WARNING] - Unauthorized: /api/share/
+2019-07-31 16:29:04 [django.request:228] [WARNING] - Unauthorized: /api/share/
+2019-07-31 16:31:05 [django.request:228] [WARNING] - Unauthorized: /api/share/
+2019-07-31 16:33:44 [django.request:228] [WARNING] - Unauthorized: /api/share/

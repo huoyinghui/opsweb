@@ -85,7 +85,7 @@ class PageJsonSet(BaseViewSet):
     """
     queryset = PageJson.objects.all().order_by('id')
     serializer_class = PageJsonSerializers
-    permission_classes = [AllowAny]
+    permission_classes = []
     search_fields = ['level']
 
 

@@ -1,16 +1,38 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# Author:Eric
 from rest_framework.pagination import PageNumberPagination
+from rest_framework.response import Response
 
 
-class Pagination(PageNumberPagination):
+class StandardPagination(PageNumberPagination):
+    page_size = 15
+    page_size_query_param = 'page_size'
+    max_page_size = 150
 
-    def get_page_size(self, request):
-        try:
-            page_size = int(request.query_params.get("page_size", -1))
-            if page_size >= 0:
-                return page_size
-        except:
-            pass
-        return self.page_size
+    def get_paginated_response(self, data):
+        data['count'] = self.page.paginator.count
+        data['next'] = self.get_next_link()
+        data['previous'] = self.get_previous_link()
+        return Response(data)
+
+
+class CommentPagination(PageNumberPagination):
+    page_size = 20
+    page_size_query_param = 'count'
+    max_page_size = 100
+
+    def get_paginated_response(self, data):
+        data['total'] = self.page.paginator.count
+        data['next'] = self.get_next_link()
+        data['previous'] = self.get_previous_link()
+        return Response(data)
+
+
+class ContentsListPagination(PageNumberPagination):
+    page_size = 5
+    page_size_query_param = 'page_size'
+    max_page_size = 150
+
+    def get_paginated_response(self, data):
+        data['count'] = self.page.paginator.count
+        data['next'] = self.get_next_link()
+        data['previous'] = self.get_previous_link()
+        return Response(data)

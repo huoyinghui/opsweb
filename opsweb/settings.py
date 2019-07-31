@@ -49,10 +49,11 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_swagger',
-    'core',
+    'rest_framework_jwt',
     'mptt',
     'xadmin',         # 添加 xadmin
     'crispy_forms',   # 添加 xadmin
+    'core',
     'music'
     # 'apps.account',
     # 'import_export',
@@ -73,8 +74,7 @@ MIDDLEWARE = [
 # restful framework
 REST_FRAMEWORK = {
     # 设置全局分页
-    # "DEFAULT_PAGINATION_CLASS":"rest_framework.pagination.PageNumberPagination", # 指定默认全局分页
-    "DEFAULT_PAGINATION_CLASS": "opsweb.paginations.Pagination",  # 指定自定义全局分页
+    "DEFAULT_PAGINATION_CLASS":"rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,  # 指定默认全局每页显示条数
 
     # 设置全局过滤器
@@ -102,7 +102,7 @@ AUTHENTICATION_BACKENDS = (
     'rest_framework.authentication.TokenAuthentication',
     # 'django.contrib.auth.backends.ModelBackend',
     # 使用自定义登陆认证
-    'core.views.CustomBackend',
+    'apps.core.views.CustomBackend',
 )
 
 ROOT_URLCONF = 'opsweb.urls'

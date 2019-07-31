@@ -13,20 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-import xadmin
+from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
 from rest_framework.routers import DefaultRouter
 # swagger pakeage
 from rest_framework.schemas import get_schema_view
 from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPIRenderer
 
-from core.views import CoreObtainJSONWebToken
 # from core.router import core_router
-from core import views as core_views
-from music import views as music_views
-
+from apps.core import views as core_views
+from apps.music import views as music_views
 
 schema_view = get_schema_view(title='Web API', renderer_classes=[OpenAPIRenderer, SwaggerUIRenderer])
 router = DefaultRouter()
@@ -36,7 +33,7 @@ router.register(r'share', music_views.ShareViewSet)
 
 urlpatterns = [
     # path('', TemplateView.as_view(template_name="index.html"), name="index"),
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     # path('xadmin/', xadmin.site.urls),
     # path(r'docs/', schema_view),  # swagger doc
     path(r'api/', include(router.urls)),

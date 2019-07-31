@@ -621,3 +621,44 @@ django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered name
 2019-07-31 16:29:04 [django.request:228] [WARNING] - Unauthorized: /api/share/
 2019-07-31 16:31:05 [django.request:228] [WARNING] - Unauthorized: /api/share/
 2019-07-31 16:33:44 [django.request:228] [WARNING] - Unauthorized: /api/share/
+2019-07-31 16:51:30 [django.request:228] [ERROR] - Internal Server Error: /api/share/1/detail/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: 'bool' object is not callable
+2019-07-31 16:51:45 [django.request:228] [ERROR] - Internal Server Error: /api/share/1/detail/
+Traceback (most recent call last):
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/huoyinghui/workspaces/drf3_opsweb/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: 'bool' object is not callable
+2019-07-31 17:09:21 [django.request:228] [WARNING] - Not Found: /xadmin
+2019-07-31 17:09:21 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2019-07-31 17:09:24 [django.request:228] [WARNING] - Not Found: /admin

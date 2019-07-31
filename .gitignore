@@ -13,4 +13,4 @@ config/
 db.sqlite3
 env/
 logs/
-
+extra_apps/

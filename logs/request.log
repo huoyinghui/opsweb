@@ -572,3 +572,5 @@ Traceback (most recent call last):
 django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered namespace
 2019-07-30 18:43:59 [django.request:228] [WARNING] - Forbidden: /docs/
 2019-07-30 18:44:22 [django.request:228] [WARNING] - Forbidden: /api-token-auth/
+2019-07-31 15:22:35 [django.request:228] [WARNING] - Not Found: /
+2019-07-31 15:22:35 [django.request:228] [WARNING] - Not Found: /favicon.ico

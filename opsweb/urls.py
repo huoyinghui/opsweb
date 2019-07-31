@@ -24,10 +24,14 @@ from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPIRenderer
 
 from core.views import CoreObtainJSONWebToken
 # from core.router import core_router
+from core import views as core_views
+from music import views as music_views
 
 
 schema_view = get_schema_view(title='Web API', renderer_classes=[OpenAPIRenderer, SwaggerUIRenderer])
 router = DefaultRouter()
+router.register(r'tree', core_views.PageJsonTreeSet)
+router.register(r'music', music_views.MusicViewSet)
 
 urlpatterns = [
     path(r'api/', include(router.urls)),

@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'mptt',
     'xadmin',         # 添加 xadmin
     'crispy_forms',   # 添加 xadmin
+    'music'
     # 'apps.account',
     # 'import_export',
 ]

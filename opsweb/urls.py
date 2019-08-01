@@ -22,8 +22,8 @@ from rest_framework.schemas import get_schema_view
 from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPIRenderer
 
 # from core.router import core_router
-from apps.core import views as core_views
-from apps.music import views as music_views
+from core import views as core_views
+from music import views as music_views
 
 schema_view = get_schema_view(title='Web API', renderer_classes=[OpenAPIRenderer, SwaggerUIRenderer])
 router = DefaultRouter()
@@ -33,6 +33,7 @@ router.register(r'share', music_views.ShareViewSet)
 
 urlpatterns = [
     # path('', TemplateView.as_view(template_name="index.html"), name="index"),
+    path(r'view/', music_views.MyView.as_view()),
     path('admin/', admin.site.urls),
     # path('xadmin/', xadmin.site.urls),
     # path(r'docs/', schema_view),  # swagger doc

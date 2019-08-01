@@ -4,7 +4,23 @@ from rest_framework.parsers import JSONParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from apps.music.models import Music, Share
+from music.models import Music, Share
+
+
+from django.views import View
+
+
+class MyBaseView(object):
+    def dispatch(self, request, *args, **kwargs):
+        print('bf view: {}'.format(request))
+        ret = super(MyBaseView, self).dispatch(request, *args, **kwargs)
+        print('af view: {}'.format(request))
+        return ret
+
+
+class MyView(MyBaseView, View):
+    def get(self, request, *args, **kwargs):
+        return Response('Get')
 
 
 # Create your views here.

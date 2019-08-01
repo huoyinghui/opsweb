@@ -12,7 +12,7 @@ from rest_framework.response import Response
 from rest_framework_jwt.settings import api_settings
 from rest_framework_jwt.views import ObtainJSONWebToken, RefreshJSONWebToken, VerifyJSONWebToken
 
-from apps.core import serializers
+from core import serializers
 from opsweb import errors
 from opsweb.exceptions import MyException
 from .baseviews import BaseViewSet

@@ -12,7 +12,7 @@ desc:
 import logging
 from rest_framework import serializers
 from opsweb.serializers import BaseAuthSerializer
-from apps.core.models import Boss, User, PageJson
+from core.models import Boss, User, PageJson
 
 from rest_framework.serializers import ModelSerializer
 from mptt.templatetags.mptt_tags import cache_tree_children

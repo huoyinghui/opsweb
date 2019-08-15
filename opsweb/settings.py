@@ -102,7 +102,7 @@ AUTHENTICATION_BACKENDS = (
     'rest_framework.authentication.TokenAuthentication',
     # 'django.contrib.auth.backends.ModelBackend',
     # 使用自定义登陆认证
-    'apps.core.views.CustomBackend',
+    'core.views.CustomBackend',
 )
 
 ROOT_URLCONF = 'opsweb.urls'

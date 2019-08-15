@@ -98,9 +98,6 @@ class PageJsonTreeSet(PageJsonSet):
             yield data
 
     def list(self, request):
-        return self.get(request)
-
-    def get(self, request):
         """
         This text is the description for this API
         ---
@@ -112,8 +109,8 @@ class PageJsonTreeSet(PageJsonSet):
         return Response(data)
 
     def retrieve(self, request, pk=None):
-        self.object = self.get_object()
-        data = self.serialize_tree([self.object])
+        obj = self.get_object()
+        data = self.serialize_tree([obj])
         return Response(data)
 
 
